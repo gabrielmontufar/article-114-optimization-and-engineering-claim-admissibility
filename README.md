@@ -92,3 +92,4 @@ A complete local run on 2026-05-20 completed every core, reporting, OpenSeesPy, 
 The scripts certify encoded constraints under declared assumptions. They do not certify full physical safety, complete regulatory approval, robust response support under uncertainty, or unrestricted global MINLP optimality.
 
 
+

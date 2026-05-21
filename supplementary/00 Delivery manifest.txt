@@ -1,4 +1,4 @@
-Engineering Optimization submission package manifest
+﻿Engineering Optimization submission package manifest
 Updated: 2026-05-21
 
 Manuscript title:
@@ -29,3 +29,4 @@ Technical status:
 - Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, and reproducibility-package software validation. It does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
 - Clean supplementary ZIP includes the CC BY 4.0 Zenodo raw workbook and excludes the AISC spreadsheet, DesignSafe/NEES raw files, cache folders, and pyc files; acquisition notes, manifests, and the third-party raw-data redistribution note are included.
 - Full local rebuild was verified with python run_all.py --continue-on-error on 2026-05-21; all scripts returned code 0. Extracted ZIP quick rebuild was also verified with python run_all.py --quick.
+
