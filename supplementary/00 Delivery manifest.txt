@@ -1,14 +1,14 @@
-﻿Engineering Optimization submission package manifest
+Engineering Optimization submission package manifest
 Updated: 2026-05-21
 
 Manuscript title:
 An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs
 
 Package contents:
-1. 01 Manuscript/Conditional Compliance Claims - Engineering Optimization.docx
-2. 01 Manuscript/Conditional Compliance Claims - Engineering Optimization.pdf
-3. 02 Supplementary material/Supplementary Material.docx
-4. 02 Supplementary material/supplementary_files_clean_for_submission.zip
+1. 01 Manuscript/Conditional_Compliance_Claims_Engineering_Optimization_uniformized.docx
+2. 01 Manuscript/Conditional_Compliance_Claims_Engineering_Optimization_uniformized.pdf
+3. 02 Supplementary material/Supplementary_Material.docx
+4. 02 Supplementary material/supplementary material.zip
 5. 03 Cover letter/cover_letter_Engineering_Optimization.docx
 
 Public supplementary repository:
