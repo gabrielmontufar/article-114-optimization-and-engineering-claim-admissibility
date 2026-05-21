@@ -1,0 +1,31 @@
+﻿Engineering Optimization submission package manifest
+Updated: 2026-05-21
+
+Manuscript title:
+An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs
+
+Package contents:
+1. 01 Manuscript/Conditional Compliance Claims - Engineering Optimization.docx
+2. 01 Manuscript/Conditional Compliance Claims - Engineering Optimization.pdf
+3. 02 Supplementary material/Supplementary Material.docx
+4. 02 Supplementary material/supplementary_files_clean_for_submission.zip
+5. 03 Cover letter/cover_letter_Engineering_Optimization.docx
+
+Public supplementary repository:
+https://github.com/gabrielmontufar/article-114-engineering-optimization-claim-assurance
+
+Submission structure note:
+- The supplementary Word document is intentionally outside the ZIP as a separate upload file.
+- The ZIP contains only the reproducibility package: scripts, processed CSV outputs, plots, manifests, notes, requirements, and logs.
+- The public GitHub repository contains both the supplementary Word document and the clean reproducibility archive.
+- Loose helper scripts and CSVs were removed from the upload folder because they are already represented inside the ZIP and could confuse version control during submission.
+
+Technical status:
+- Main manuscript repositioned as an optimizer-agnostic, post-optimality claim-admissibility layer for Engineering Optimization outputs.
+- Main manuscript readability pass completed: three embedded main-text figures were added, Word heading styles were normalized, Table 8 was corrected to Table 2, and the reference list was alphabetized with no uncited references or orphan in-text citations detected.
+- Published physical-response evidence added for steel-frame response data from DesignSafe/NEES and truss response data from Zenodo. The raw Zenodo steel-truss workbook is included in the ZIP because the source record declares CC BY 4.0 licensing. The raw DesignSafe/NEES portal-frame files and the AISC Shapes Database spreadsheet are not redistributed because open redistribution permission was not confirmed for those third-party resources; processed reproducible CSVs, manifests, acquisition notes, and scripts are included.
+- Software full-stack validation added: presentation artifacts, application scripts, Python syntax, CSV schemas, processed data, ZIP exclusions, and upload ZIP hash consistency are validated.
+- Current software validation status: passed; syntax_error_count=0; data_schema_error_count=0; missing_artifact_count=0; upload_package_hash_match=yes.
+- Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, and reproducibility-package software validation. It does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
+- Clean supplementary ZIP includes the CC BY 4.0 Zenodo raw workbook and excludes the AISC spreadsheet, DesignSafe/NEES raw files, cache folders, and pyc files; acquisition notes, manifests, and the third-party raw-data redistribution note are included.
+- Full local rebuild was verified with python run_all.py --continue-on-error on 2026-05-21; all scripts returned code 0. Extracted ZIP quick rebuild was also verified with python run_all.py --quick.
