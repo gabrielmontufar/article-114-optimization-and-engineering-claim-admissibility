@@ -4,7 +4,8 @@ https://github.com/gabrielmontufar/article-114-optimization-and-engineering-clai
 
 Repository contents include the supplementary Word document, the clean reproducibility archive, public README, manifests, acquisition notes, processed response-support points, and software/package integrity outputs.
 
-Redistribution boundary: the raw Zenodo steel-truss workbook is included because the source record declares a Creative Commons Attribution 4.0 International license. Raw DesignSafe/NEES portal-frame files and the AISC Shapes Database spreadsheet are not redistributed because open redistribution permission was not confirmed; the package provides processed response-support points, manifests, acquisition notes, and instructions for reviewers to obtain those sources.
+Redistribution boundary: third-party raw datasets are not bundled in the submission ZIP. The package provides processed response-support points, manifests, acquisition notes, and instructions for reviewers to obtain the public Zenodo steel-truss workbook, the raw DesignSafe/NEES portal-frame files, and the official AISC Shapes Database spreadsheet when optional raw-data reruns are needed.
+
 
 
 

@@ -8,7 +8,7 @@ The submitted supplementary Word document and the clean reproducibility archive 
 
 https://github.com/gabrielmontufar/article-114-optimization-and-engineering-claim-admissibility
 
-The repository is the public access point for the article 114 supplementary material. It includes the supplementary Word document, the submitted ZIP archive, this README, manifests, acquisition notes, and software/package integrity outputs. Third-party raw datasets are redistributed only when permission is clear. The raw Zenodo steel-truss workbook is included because the source record declares a Creative Commons Attribution 4.0 International license; raw DesignSafe/NEES portal-frame files and the AISC Shapes Database spreadsheet are not redistributed because open redistribution permission was not confirmed. Processed response-support points, manifests, acquisition notes, and instructions for obtaining those sources are included.
+The repository is the public access point for the article 114 supplementary material. It includes the supplementary Word document, the submitted ZIP archive, this README, manifests, acquisition notes, processed response-support points, and software/package integrity outputs. Third-party raw datasets are not bundled in the submission ZIP; instructions for obtaining the public or official source files are included for optional raw-data reruns.
 
 ## Environment
 
@@ -59,7 +59,7 @@ The file `cgc_aisc_claim_gate.py` is a claim gate that combines the clause regis
 
 The files `cgc_portal_frame_published_test_register.csv`, `cgc_portal_frame_experimental_response.csv`, `cgc_portal_frame_response_support.py`, `cgc_portal_frame_response_support_summary.csv`, `cgc_portal_frame_response_support_details.csv`, `cgc_response_support_threshold_sensitivity.csv`, `cgc_portal_frame_raw_data_manifest.csv`, and `cgc_portal_frame_raw_data_acquisition_note.md` implement the published-response support layer. The raw DesignSafe/NEES files are stored outside the submission ZIP because no open redistribution license was confirmed for the legacy NEES record; the processed service-envelope points needed to rerun the reported support check are included. The resulting status is limited to published steel-frame response support within the tested response family; it is not professional certification, safety certification, AISC approval, or complete regulatory approval.
 
-The files `cgc_truss_published_test_register.csv`, `cgc_truss_experimental_response.csv`, `cgc_truss_response_support.py`, `cgc_truss_response_support_summary.csv`, `cgc_truss_response_support_details.csv`, `cgc_response_support_threshold_sensitivity.csv`, `cgc_truss_raw_data_manifest.csv`, and `cgc_truss_raw_data_acquisition_note.md` implement the published truss response-support layer. The raw Zenodo workbook is included in the ZIP under `external_raw_datasets/Zenodo_15658671_SteelTruss/` because the record is licensed under Creative Commons Attribution 4.0 International; compact processed response scores are also included. The module screens seven truss damage/collapse cases against intact-state sensor baselines, accepts six under the declared detection rule, logs one discrepancy, and reports `false_certified_count = 0`.
+The files `cgc_truss_published_test_register.csv`, `cgc_truss_experimental_response.csv`, `cgc_truss_response_support.py`, `cgc_truss_response_support_summary.csv`, `cgc_truss_response_support_details.csv`, `cgc_response_support_threshold_sensitivity.csv`, `cgc_truss_raw_data_manifest.csv`, and `cgc_truss_raw_data_acquisition_note.md` implement the published truss response-support layer. The ZIP includes compact processed response points and acquisition instructions for the public Zenodo workbook rather than bundling the large raw workbook. The module screens seven truss damage/collapse cases against intact-state sensor baselines, accepts six under the declared detection rule, logs one discrepancy, and reports `false_certified_count = 0`.
 
 ## Reproducibility Boundary
 
@@ -68,12 +68,12 @@ The files `cgc_truss_published_test_register.csv`, `cgc_truss_experimental_respo
 | Core optimization and claim-risk scripts | Yes | No |
 | Software-package integrity checks | Yes, in supplement-only mode; upload hash is checked in the full package folder | No |
 | Portal-frame published response support | Yes for processed service-envelope points and reported metrics | Yes to regenerate processed points from raw DesignSafe/NEES files |
-| Truss published response support | Yes, including the CC BY 4.0 raw Zenodo workbook and processed response scores | No |
+| Truss published response support | Yes, using processed response scores plus Zenodo acquisition instructions | No |
 | AISC W-shape catalog audit | Yes for included audit outputs | Yes to rerun from the official AISC spreadsheet |
 
 ## Third-Party Raw-Data Redistribution Note
 
-The submission ZIP intentionally separates datasets by redistribution status. The Zenodo steel-truss workbook is included under `external_raw_datasets/Zenodo_15658671_SteelTruss/` because the source record declares a Creative Commons Attribution 4.0 International license. The legacy DesignSafe/NEES SAC Steel Project raw files are not redistributed because an open redistribution license was not confirmed for that record; processed service-envelope points, manifest rows, and an acquisition note are included instead. The AISC Shapes Database spreadsheet is also not redistributed because it is a third-party catalog resource; the package includes audit outputs and an acquisition note explaining how a reviewer can obtain the official spreadsheet and rerun the optional AISC catalog audit.
+The submission ZIP intentionally separates processed evidence from large or third-party source files. The Zenodo steel-truss workbook is public and citable, but the submission ZIP provides processed response points and acquisition instructions rather than bundling the large workbook. The legacy DesignSafe/NEES SAC Steel Project raw files are not redistributed because an open redistribution license was not confirmed for that record; processed service-envelope points, manifest rows, and an acquisition note are included instead. The AISC Shapes Database spreadsheet is also not redistributed because it is a third-party catalog resource; the package includes audit outputs and an acquisition note explaining how a reviewer can obtain the official spreadsheet and rerun the optional AISC catalog audit.
 
 The files `cgc_software_package_integrity.py`, `cgc_software_package_integrity_details.csv`, `cgc_software_package_integrity_summary.csv`, and `cgc_software_package_integrity_note.txt` implement software-package integrity checks for the reproducibility package. This layer checks Python syntax, required application scripts, CSV schemas, processed datasets, presentation artifacts, ZIP restrictions, and upload-package hash consistency. It supports software/package integrity only; it is not structural-code approval, legal approval, professional approval, or complete regulatory approval.
 
@@ -102,6 +102,7 @@ The included logs and verification tables document quick/reporting execution, pe
 ## Scope
 
 The scripts certify encoded constraints under declared assumptions. They do not certify full physical safety, complete regulatory approval, robust response support under uncertainty, or unrestricted global MINLP optimality.
+
 
 
 

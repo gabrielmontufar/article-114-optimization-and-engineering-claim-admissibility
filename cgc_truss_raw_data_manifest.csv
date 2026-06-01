@@ -1,4 +1,5 @@
 ﻿source_id,local_raw_path,raw_file,raw_size_bytes,included_in_processed_csv
-ZENODO_15658671_STEEL_TRUSS,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\supplementary_files\external_raw_datasets\Zenodo_15658671_SteelTruss,LatentMechanisms_SteelTruss_ExperimentalData.xlsx,81536850,processed features only
+ZENODO_15658671_STEEL_TRUSS,external public source DOI 10.5281/zenodo.15658671; not bundled in submission ZIP,LatentMechanisms_SteelTruss_ExperimentalData.xlsx,81536850,processed features included; raw workbook acquired externally for optional rerun
+
 
 

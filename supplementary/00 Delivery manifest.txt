@@ -33,9 +33,10 @@ Optimization and Engineering fit status as of 2026-06-01:
 - Main manuscript PDF exported from the current DOCX on 2026-06-01.
 - Supplementary Word document verified with Word COM: 1880 words, 19 pages, 4 tables.
 - Cover letter verified with Word COM: 325 words, 2 pages, 0 tables.
-- Supplementary ZIP verified: 164 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and Supplementary_Material.docx, excludes AISC spreadsheet, excludes pyc/cache files, excludes the legacy full-code AISC validator filename, excludes prior-target metadata strings, excludes legacy response-overclaim labels, and excludes legacy response-support overclaim labels, SHA256 0BF2AB4B601119C3EC36C74B227BE9F4DF4CD29FD0A4513ADBD41C66B6AF2943.
+- Supplementary ZIP verified: 163 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and Supplementary_Material.docx, excludes AISC spreadsheet, excludes the large raw Zenodo workbook, excludes pyc/cache files, excludes the legacy full-code AISC validator filename, excludes prior-target metadata strings, excludes legacy response-overclaim labels, and excludes legacy response-support overclaim labels, SHA256 BB1319AD37B61487BC8AF68915D1385C1C85D4C4EBDEA1BC78ED51CFA9D60705, size 15.993 MB.
 - Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, optimization-software benchmarking, and reproducibility-package software-package integrity checks.
 - The package does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
+
 
 
 

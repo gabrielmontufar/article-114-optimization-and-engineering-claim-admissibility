@@ -48,7 +48,6 @@ data,artifact_exists:cgc_truss_experimental_response.csv,pass,artifact present
 data,artifact_exists:cgc_truss_raw_data_manifest.csv,pass,artifact present
 data,artifact_exists:cgc_truss_raw_data_acquisition_note.md,pass,artifact present
 data,artifact_exists:third_party_raw_data_redistribution_note.md,pass,artifact present
-data,artifact_exists:external_raw_datasets/Zenodo_15658671_SteelTruss/LatentMechanisms_SteelTruss_ExperimentalData.xlsx,pass,artifact present
 data,artifact_exists:vendor_pulp_license_note.txt,pass,artifact present
 data,artifact_exists:cgc_portal_frame_response_support_plot.png,pass,artifact present
 data,artifact_exists:cgc_truss_response_support_plot.png,pass,artifact present

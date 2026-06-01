@@ -80,7 +80,6 @@ REQUIRED_DATA_ARTIFACTS = [
     "cgc_truss_raw_data_manifest.csv",
     "cgc_truss_raw_data_acquisition_note.md",
     "third_party_raw_data_redistribution_note.md",
-    "external_raw_datasets/Zenodo_15658671_SteelTruss/LatentMechanisms_SteelTruss_ExperimentalData.xlsx",
     "vendor_pulp_license_note.txt",
     "cgc_portal_frame_response_support_plot.png",
     "cgc_truss_response_support_plot.png",
