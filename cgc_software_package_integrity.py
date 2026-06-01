@@ -3,6 +3,7 @@
 import csv
 import hashlib
 import py_compile
+import re
 import sys
 from pathlib import Path
 from zipfile import ZipFile, BadZipFile
@@ -94,14 +95,20 @@ FORBIDDEN_ZIP_NAMES = {
     "LatentMechanisms_SteelTruss_ExperimentalData.xlsx",
     "cgc_response_support_" + "raw_data.csv",
 }
-FORBIDDEN_TEXT_PATTERNS = [
-    "C:" + "\\Users\\gjm31",
-    "G:" + "\\Mi unidad",
-    "Codex" + "_article_114",
-    "cgc_" + "full_code_validation",
-    "cgc_portal_frame_" + "full_code_validation",
-    "An Optimizer-Agnostic " + "Certification " + "Layer",
-    "Engineering " + "Optimization outputs",
+FORBIDDEN_TEXT_REGEXES = [
+    (r"[A-Za-z]:\\Users\\[^\\\r\n]+", "local user-profile path"),
+    (r"[A-Za-z]:\\[^\\\r\n]*Mi unidad", "local cloud-drive path"),
+    (r"Codex[_-]article[_-]\d+", "internal Codex workspace name"),
+    (r"cgc_" + r"full_code_" + r"validation", "legacy full-code validation basename"),
+    (
+        r"cgc_portal_frame_" + r"full_code_" + r"validation",
+        "legacy portal-frame full-code validation basename",
+    ),
+    (
+        r"An Optimizer-Agnostic " + r"Certification " + r"Layer",
+        "prior title wording",
+    ),
+    (r"Engineering " + r"Optimization outputs", "prior target wording"),
 ]
 
 SOFTWARE_FIELDS = [
@@ -195,7 +202,7 @@ def check_public_text(rows: list[dict[str, str]]) -> int:
         if any(part in {"__pycache__", ".git", "vendor" + "_pulp"} for part in path.parts):
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
-        hits = [pattern for pattern in FORBIDDEN_TEXT_PATTERNS if pattern in text]
+        hits = [label for regex, label in FORBIDDEN_TEXT_REGEXES if re.search(regex, text)]
         if hits:
             errors += len(hits)
             add(rows, "data", f"text_hygiene:{path.relative_to(BASE)}", "fail", "forbidden text: " + "; ".join(hits))

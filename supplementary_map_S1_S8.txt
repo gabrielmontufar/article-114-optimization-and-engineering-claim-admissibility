@@ -1,10 +1,10 @@
-﻿Supplementary material map S1-S8
+﻿Supplementary material map S1-S12
 
 S1. Mathematical formulation and constraint catalog
-Location: Supplementary_Material.docx
+Location: Online Resource 1, ESM_1_Supplementary_Material.pdf
 
 S2. Benchmark definitions and extended tables
-Location: Supplementary Material DOCX plus scripts/outputs:
+Location: Online Resource 1 plus Online Resource 2 scripts/outputs:
 cgc_scalar_benchmark.py
 cgc_ten_bar_truss_benchmark.py
 cgc_ten_bar_truss_exhaustive_grouped.py
@@ -34,7 +34,7 @@ cgc_aisc_portal_frame_catalog_benchmark_note.txt
 aisc_source_acquisition_note.txt
 
 S6. Certificate propositions and scope limits
-Location: Supplementary_Material.docx
+Location: Online Resource 1, ESM_1_Supplementary_Material.pdf
 
 S7. Monte Carlo robustness boundary probe
 Location:
@@ -44,7 +44,35 @@ cgc_uncertainty_robustness_probe_note.txt
 
 S8. Alignment with original-research reporting guides
 Location:
-Supplementary_Material.docx
+Online Resource 1, ESM_1_Supplementary_Material.pdf
 
+S9. Certificate handoff for virtual testing and full-code audit
+Location:
+Online Resource 1, ESM_1_Supplementary_Material.pdf
+cgc_certificate_handoff_schema.json
+cgc_code_physics_validation_extension.md
 
+S10. Code-and-response support extension
+Location:
+Online Resource 1, ESM_1_Supplementary_Material.pdf
+cgc_full_code_clause_register.csv
+cgc_partial_code_oracle_comparison.py
+cgc_portal_frame_clause_support_gate.py
+cgc_aisc_claim_gate.py
+cgc_portal_frame_response_support.py
+cgc_truss_response_support.py
 
+S11. Reviewer-facing claim-status controls
+Location:
+Online Resource 1, ESM_1_Supplementary_Material.pdf
+cgc_claim_status_by_evidence_layer.csv
+cgc_negative_control_claim_test.py
+cgc_manual_oracle_check.py
+cgc_reviewer_claim_audit_checklist.md
+
+S12. Software-package integrity
+Location:
+Online Resource 1, ESM_1_Supplementary_Material.pdf
+cgc_software_package_integrity.py
+cgc_software_package_integrity_summary.csv
+cgc_software_package_integrity_details.csv
