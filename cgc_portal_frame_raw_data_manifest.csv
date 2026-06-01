@@ -1,14 +1,9 @@
-﻿source_id,local_raw_path,raw_file,raw_point_count,included_in_processed_csv
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc01.txt,5381,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc02.txt,5272,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc03.txt,5730,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc04.txt,6426,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc05.txt,10001,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc06.txt,8397,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc07.txt,5489,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc08.txt,6955,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc09.txt,7678,yes
-DESIGNSAFE_NEES_2005_0101_EXP5,external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC (not bundled; obtain from DesignSafe/NEES),sac2rc10.txt,6163,yes
-
-
-
+source_id,local_raw_path,raw_file,raw_point_count,included_in_processed_csv
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc01.txt,15,yes
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc02.txt,23,yes
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc03.txt,21,yes
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc04.txt,15,yes
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc05.txt,23,yes
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc06.txt,14,yes
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc08.txt,12,yes
+DESIGNSAFE_NEES_2005_0101_EXP5,not present; processed CSV used,sac2rc10.txt,8,yes

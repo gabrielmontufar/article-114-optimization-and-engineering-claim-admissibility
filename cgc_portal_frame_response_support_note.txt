@@ -1,8 +1,6 @@
-﻿Published published-response validation layer.
+Published published-response validation layer.
 Raw source: DesignSafe/NEES public project NEES-2005-0101, SAC Steel Project Phase 2, Experiment 5, converted sac2rc*.txt response curves.
 The raw files are stored outside the submission ZIP because they are third-party public data; cgc_portal_frame_experimental_response.csv stores the processed service-envelope points used by the script.
 The validation checks service-response curve agreement and initial stiffness consistency against raw published cyclic response data.
 It is not safety certification, professional certification, AISC approval, or complete regulatory approval.
-Passing specimens: 7 of 10; false_certified_count=0; status=supported_by_processed_published_response_data.
-
-
+Passing specimens: 0 of 8; false_certified_count=0; status=response_support_failed.

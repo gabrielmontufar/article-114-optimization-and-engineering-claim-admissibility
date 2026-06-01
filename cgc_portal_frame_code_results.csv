@@ -1,6 +1,4 @@
-﻿case,column,beam,weight_proxy,drift_in,drift_ratio,column_dcr,beam_dcr,scwb_ratio,column_shear_ratio,beam_shear_ratio,drift_residual,column_strength_residual,beam_strength_residual,strong_column_weak_beam_residual,column_shear_hierarchy_residual,beam_shear_hierarchy_residual,encoded_feasible
+case,column,beam,weight_proxy,drift_in,drift_ratio,column_dcr,beam_dcr,scwb_ratio,column_shear_ratio,beam_shear_ratio,drift_residual,column_strength_residual,beam_strength_residual,strong_column_weak_beam_residual,column_shear_hierarchy_residual,beam_shear_hierarchy_residual,encoded_feasible
 soft penalty w=500,S1,S1,3748.8,0.7744055769948961,0.26889082534545006,1.6,3.5555555555555554,1.6666666666666667,0.11428571428571428,0.6095238095238096,0.0,0.6000000000000001,2.5555555555555554,0.0,0.0,0.0,False
 soft penalty w=20000,S3,S4,8241.6,0.20485920028101398,0.07113166676424097,0.6697674418604651,0.9142857142857143,1.0238095238095237,0.06153846153846154,0.23703703703703705,0.0,0.0,0.0,0.0,0.0,0.0,True
 exhaustive hard constraints,S3,S4,8241.6,0.20485920028101398,0.07113166676424097,0.6697674418604651,0.9142857142857143,1.0238095238095237,0.06153846153846154,0.23703703703703705,0.0,0.0,0.0,0.0,0.0,0.0,True
-
-

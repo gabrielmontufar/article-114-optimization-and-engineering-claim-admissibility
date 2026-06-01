@@ -7,12 +7,12 @@ grouped_ten_bar_truss,soft penalty w=100,no,8.591169,not_applicable,supported_by
 grouped_ten_bar_truss,soft penalty w=1000,no,1.772792,not_applicable,supported_by_processed_published_response_data,0,0,0,0,high
 grouped_ten_bar_truss,soft penalty w=5000,no,0.386396,not_applicable,supported_by_processed_published_response_data,0,0,0,0,high
 grouped_ten_bar_truss,soft penalty w=20000,yes,0.0,not_applicable,supported_by_processed_published_response_data,0,0,0,0,low_response_supported
-portal_frame_code_like,soft penalty w=500,false,2.5555555555555554,validated_against_partial_code_oracle,supported_by_processed_published_response_data,25.00,6,0,0,high
-portal_frame_code_like,soft penalty w=20000,true,0.0,validated_against_partial_code_oracle,supported_by_processed_published_response_data,25.00,6,0,0,low_response_supported
-portal_frame_code_like,exhaustive hard constraints,true,0.0,validated_against_partial_code_oracle,supported_by_processed_published_response_data,25.00,6,0,0,low_response_supported
-aisc_w_shape_portal_frame,soft penalty w=500,false,0.4479638009049771,validated_against_partial_code_oracle,supported_by_processed_published_response_data,25.00,6,0,0,high
-aisc_w_shape_portal_frame,soft penalty w=20000,true,0.0,validated_against_partial_code_oracle,supported_by_processed_published_response_data,25.00,6,0,0,low_response_supported
-aisc_w_shape_portal_frame,exhaustive AISC hard constraints,true,0.0,validated_against_partial_code_oracle,supported_by_processed_published_response_data,25.00,6,0,0,low_response_supported
+portal_frame_code_like,soft penalty w=500,false,2.5555555555555554,validated_against_partial_code_oracle,response_support_failed,25.00,6,0,0,high
+portal_frame_code_like,soft penalty w=20000,true,0.0,validated_against_partial_code_oracle,response_support_failed,25.00,6,0,0,low_partial_code_supported
+portal_frame_code_like,exhaustive hard constraints,true,0.0,validated_against_partial_code_oracle,response_support_failed,25.00,6,0,0,low_partial_code_supported
+aisc_w_shape_portal_frame,soft penalty w=500,false,0.4479638009049771,validated_against_partial_code_oracle,response_support_failed,25.00,6,0,0,high
+aisc_w_shape_portal_frame,soft penalty w=20000,true,0.0,validated_against_partial_code_oracle,response_support_failed,25.00,6,0,0,low_partial_code_supported
+aisc_w_shape_portal_frame,exhaustive AISC hard constraints,true,0.0,validated_against_partial_code_oracle,response_support_failed,25.00,6,0,0,low_partial_code_supported
 openseespy_external_fem_crosscheck,45_case_blind_feasibility_classification,yes,max_stress_diff=3.553e-15; max_disp_diff=7.105e-15,not_applicable,not_applicable,0,0,0,0,low_encoded_only
 monte_carlo_uncertainty_probe,exact_grouped_certificate_nominal,no,0.202079,not_applicable,not_applicable,0,0,0,0,high
 monte_carlo_uncertainty_probe,near_boundary_penalty_selected,no,0.250070,not_applicable,not_applicable,0,0,0,0,high

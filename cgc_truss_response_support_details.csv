@@ -1,4 +1,4 @@
-﻿source_id,specimen_id,undamaged_sheet,damaged_sheet,undamaged_sample_count,damaged_sample_count,damage_threshold,undamaged_false_alarm_rate,damaged_detection_rate,median_damaged_response_score,validation_pass,discrepancy_reason
+source_id,specimen_id,undamaged_sheet,damaged_sheet,undamaged_sample_count,damaged_sample_count,damage_threshold,undamaged_false_alarm_rate,damaged_detection_rate,median_damaged_response_score,validation_pass,discrepancy_reason
 ZENODO_15658671_STEEL_TRUSS,horizontal_bracing,Loss_of_Horizontal_Brac_UD,Loss_Horizontal_Brac_Total_D,256,256,1.944536,0.007812,0.000000,0.707653,no,damage-state response not detected above the declared threshold
 ZENODO_15658671_STEEL_TRUSS,vertical_bracing,Loss_Vertical_Bracing_UD,Loss_Vertical_Bracing_Total_D,255,256,2.030488,0.007843,0.867188,5.846433,yes,damage-state response detected above intact baseline
 ZENODO_15658671_STEEL_TRUSS,vertical_member,Loss_Vertical_UD,Loss_Vertical_D,252,252,1.932659,0.007937,0.642857,3.626348,yes,damage-state response detected above intact baseline
@@ -6,5 +6,3 @@ ZENODO_15658671_STEEL_TRUSS,lower_chord,Loss_Chord_UD,Loss_Chord_D,258,252,1.931
 ZENODO_15658671_STEEL_TRUSS,transversal_beam,Loss_Transversal_Beam__UD,Loss_Transversal_Beam_Total_D,259,254,2.169200,0.007722,0.791339,17.682723,yes,damage-state response detected above intact baseline
 ZENODO_15658671_STEEL_TRUSS,diagonal,Loss_Diagonal_UD,Loss_Diagonal_D,253,251,1.949296,0.003953,0.729084,2.546785,yes,damage-state response detected above intact baseline
 ZENODO_15658671_STEEL_TRUSS,diagonal_collapse,Loss_Diagonal_UD,Loss_Diagonal_Collapse,253,253,1.949296,0.003953,0.964427,19.674477,yes,damage-state response detected above intact baseline
-
-

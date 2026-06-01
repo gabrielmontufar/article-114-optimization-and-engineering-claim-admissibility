@@ -1,8 +1,6 @@
-﻿Published truss published-response validation layer.
+Published truss published-response validation layer.
 Raw source: Zenodo dataset 10.5281/zenodo.15658671, Latent resistance mechanisms of steel truss bridges after critical failures.
 The raw workbook is stored outside the submission ZIP; cgc_truss_experimental_response.csv stores compact processed response scores from the multichannel sensor records.
 The validation compares damaged/collapse response states against intact-state baselines for the same truss-family sensor system.
 It supports truss-family published response evidence only; it is not safety certification, professional approval, or complete regulatory approval.
 Passing cases: 6 of 7; false_certified_count=0; status=supported_by_processed_published_response_data.
-
-

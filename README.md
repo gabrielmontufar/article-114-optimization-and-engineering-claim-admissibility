@@ -33,7 +33,7 @@ To regenerate summary files from the included outputs:
 python run_all.py --quick
 ```
 
-This mode overwrites `run_all_log.txt` with the quick-run scripts only. Runtime fields for scripts not executed in the selected mode are reported as `not_measured` after the log-dependent summary is refreshed.
+This mode writes `run_all_quick_log.txt`; it does not overwrite the full-run `run_all_log.txt`. The log-dependent summary continues to use the included full-run log unless a new full run is executed.
 
 ## Smoke Rebuild
 
@@ -43,7 +43,7 @@ To run a short reviewer smoke test that checks core logic, claim blocking, manua
 python run_all.py --smoke
 ```
 
-This mode also overwrites `run_all_log.txt`; omitted long-running scripts remain represented by their included output files but their runtime fields are reported as `not_measured` for that smoke run.
+This mode writes `run_all_smoke_log.txt`; it does not overwrite the full-run `run_all_log.txt`. Omitted long-running scripts remain represented by their included output files and by the preserved full-run log.
 
 ## Core Rebuild
 
@@ -70,7 +70,7 @@ The files `cgc_truss_published_test_register.csv`, `cgc_truss_experimental_respo
 | Layer | Reproducible from ZIP only | Requires external public raw dataset |
 |---|---|---|
 | Core optimization and claim-risk scripts | Yes | No |
-| Software-package integrity checks | Yes, in supplement-only mode; upload hash is checked in the full package folder | No |
+| Software-package integrity checks | Yes, in supplement-only mode; the upload ZIP SHA256 is recorded in the delivery manifest | No |
 | Portal-frame published response support | Yes for processed service-envelope points and reported metrics | Yes to regenerate processed points from raw DesignSafe/NEES files |
 | Truss published response support | Yes, using processed response scores plus Zenodo acquisition instructions | No |
 | AISC W-shape catalog audit | Yes for included audit outputs | Yes to rerun from the official AISC spreadsheet |
@@ -79,7 +79,7 @@ The files `cgc_truss_published_test_register.csv`, `cgc_truss_experimental_respo
 
 The submission ZIP intentionally separates processed evidence from large or third-party source files. The Zenodo steel-truss workbook is public and citable, but the submission ZIP provides processed response points and acquisition instructions rather than bundling the large workbook. The legacy DesignSafe/NEES SAC Steel Project raw files are not redistributed because an open redistribution license was not confirmed for that record; processed service-envelope points, manifest rows, and an acquisition note are included instead. The AISC Shapes Database spreadsheet is also not redistributed because it is a third-party catalog resource; the package includes audit outputs and an acquisition note explaining how a reviewer can obtain the official spreadsheet and rerun the optional AISC catalog audit.
 
-The files `cgc_software_package_integrity.py`, `cgc_software_package_integrity_details.csv`, `cgc_software_package_integrity_summary.csv`, and `cgc_software_package_integrity_note.txt` implement software-package integrity checks for the reproducibility package. This layer checks Python syntax, required application scripts, CSV schemas, processed datasets, presentation artifacts, ZIP restrictions, and upload-package hash consistency. It supports software/package integrity only; it is not structural-code approval, legal approval, professional approval, or complete regulatory approval.
+The files `cgc_software_package_integrity.py`, `cgc_software_package_integrity_details.csv`, `cgc_software_package_integrity_summary.csv`, and `cgc_software_package_integrity_note.txt` implement software-package integrity checks for the reproducibility package. This layer checks Python syntax, required application scripts, CSV schemas, processed datasets, presentation artifacts, and ZIP restrictions; the upload-package SHA256 is recorded in the delivery manifest to avoid self-hash recursion. It supports software/package integrity only; it is not structural-code approval, legal approval, professional approval, or complete regulatory approval.
 
 The older files `cgc_response_support_protocol.md`, `cgc_response_support_protocol_rows.csv`, and `cgc_response_support_metrics.py` remain as a historical protocol/gating demonstration for future external-response datasets; the CSV contains protocol rows only, not redistributed third-party raw measurements. The published-response module above is the active response-support layer used by the reporting summary.
 
@@ -106,6 +106,7 @@ The included logs and verification tables document quick/reporting execution, pe
 ## Scope
 
 The scripts verify encoded constraints under declared assumptions. They do not certify full physical safety, complete regulatory approval, robust response support under uncertainty, or unrestricted global MINLP optimality.
+
 
 
 

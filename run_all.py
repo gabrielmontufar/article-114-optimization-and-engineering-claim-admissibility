@@ -83,10 +83,13 @@ def main() -> None:
 
     if args.quick:
         scripts = list(REPORTING_SCRIPTS)
+        mode = "quick"
     elif args.smoke:
         scripts = list(SMOKE_SCRIPTS)
+        mode = "smoke"
     else:
         scripts = list(CORE_SCRIPTS)
+        mode = "full"
 
     if not args.quick and not args.smoke:
         for required_file, script in OPTIONAL_EXTERNAL_DATA:
@@ -101,14 +104,16 @@ def main() -> None:
         print(f"RUN {script}")
         log_rows.append(run_script(script, args.continue_on_error))
 
+    log_text = "\n".join(f"{script},returncode={code},elapsed_s={elapsed:.3f}" for script, code, elapsed in log_rows) + "\n"
+    mode_log = BASE / f"run_all_{mode}_log.txt"
+    mode_log.write_text(log_text, encoding="utf-8")
     out = BASE / "run_all_log.txt"
-    out.write_text(
-        "\n".join(f"{script},returncode={code},elapsed_s={elapsed:.3f}" for script, code, elapsed in log_rows)
-        + "\n",
-        encoding="utf-8",
-    )
+    if mode == "full":
+        out.write_text(log_text, encoding="utf-8")
     refresh_log_dependent_reports(scripts, args.continue_on_error)
-    print(out)
+    print(mode_log)
+    if mode != "full":
+        print(f"{out} unchanged; quick/smoke logs are mode-specific")
 
 
 if __name__ == "__main__":
