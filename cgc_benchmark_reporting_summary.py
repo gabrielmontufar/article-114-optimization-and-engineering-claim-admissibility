@@ -100,7 +100,7 @@ def main() -> None:
                 == 0
                 else "no",
                 "solver_or_method": "catalog enumeration",
-                "reported_runtime_s": "0.27",
+                "reported_runtime_s": runtimes.get("cgc_scalar_benchmark.py", "not_measured"),
                 "runtime_scope": "wall-clock run of cgc_scalar_benchmark.py",
                 "code_standard_family": "not_applicable",
                 "code_clause_coverage_percent": "0",
@@ -134,7 +134,7 @@ def main() -> None:
                 ),
                 "encoded_feasible": row["encoded_feasible"],
                 "solver_or_method": "exhaustive grouped catalog enumeration",
-                "reported_runtime_s": "115.12",
+                "reported_runtime_s": runtimes.get("cgc_ten_bar_truss_exhaustive_grouped.py", "not_measured"),
                 "runtime_scope": "wall-clock run of cgc_ten_bar_truss_exhaustive_grouped.py",
                 "code_standard_family": "not_applicable",
                 "code_clause_coverage_percent": "0",
@@ -174,7 +174,7 @@ def main() -> None:
                 ),
                 "encoded_feasible": str(row["encoded_feasible"]).lower(),
                 "solver_or_method": "exhaustive catalog enumeration",
-                "reported_runtime_s": "0.66",
+                "reported_runtime_s": runtimes.get("cgc_portal_frame_code_benchmark.py", "not_measured"),
                 "runtime_scope": "wall-clock run of cgc_portal_frame_code_benchmark.py",
                 "code_standard_family": "ASCE 7-22 / AISC 360-22 simplified checks",
                 "code_clause_coverage_percent": full_code_summary.get("code_clause_coverage_percent", "0"),
@@ -331,7 +331,7 @@ def main() -> None:
                 "The AISC benchmark uses a locally supplied AISC Shapes Database v16.0 spreadsheet; the spreadsheet is not redistributed in the clean ZIP.",
                 "The OpenSeesPy cross-check verifies finite-element classification agreement and is not counted as an optimization runtime.",
                 "The Monte Carlo perturbation probe is a robustness boundary test; it is not used to claim robust response support unless every sampled perturbation remains feasible.",
-                "Longest local verification runs observed in this package: cgc_ten_bar_truss_benchmark.py about 235.35 s; cgc_ten_bar_truss_exhaustive_grouped.py about 115.12 s; cgc_penalty_weight_sweep.py about 70.54 s; cgc_milp_crosscheck_pulp.py about 103.8 s with vendored PuLP.",
+                "The reporting summary reads reproducibility runtimes from the included run_all_log.txt when available.",
             ]
         )
         + "\n",

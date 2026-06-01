@@ -4,4 +4,4 @@ The PuLP/CBC log reports solver time after feasible candidate sets are construct
 The AISC benchmark uses a locally supplied AISC Shapes Database v16.0 spreadsheet; the spreadsheet is not redistributed in the clean ZIP.
 The OpenSeesPy cross-check verifies finite-element classification agreement and is not counted as an optimization runtime.
 The Monte Carlo perturbation probe is a robustness boundary test; it is not used to claim robust response support unless every sampled perturbation remains feasible.
-Longest local verification runs observed in this package: cgc_ten_bar_truss_benchmark.py about 235.35 s; cgc_ten_bar_truss_exhaustive_grouped.py about 115.12 s; cgc_penalty_weight_sweep.py about 70.54 s; cgc_milp_crosscheck_pulp.py about 103.8 s with vendored PuLP.
+The reporting summary reads reproducibility runtimes from the included run_all_log.txt when available.
