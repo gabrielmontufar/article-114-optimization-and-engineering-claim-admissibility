@@ -1,0 +1,8 @@
+﻿Validation-strength suite for encoded-claim engineering optimization.
+Exact grouped ground truth: 100000 candidates, 3518 encoded-feasible candidates, best feasible weight 9567.522072 lb.
+Exact enumeration wall-clock time in this run: 61.192 s.
+Multi-seed calibration: 20 seeds, 1000 random grouped-catalog samples per seed.
+Purpose: test whether penalty-selected or randomly sampled candidates support encoded-compliance claims when compared against exact enumeration ground truth.
+Outputs: cgc_validation_multiseed_runs.csv and cgc_validation_strength_summary.csv.
+
+

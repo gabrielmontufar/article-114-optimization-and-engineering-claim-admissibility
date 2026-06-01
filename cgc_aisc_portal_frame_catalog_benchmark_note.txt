@@ -1,0 +1,11 @@
+﻿AISC W-shape portal-frame catalog benchmark for encoded-claim engineering optimization.
+AISC W-shapes read from local spreadsheet: 289.
+Catalog pairs evaluated: 83521.
+Encoded-feasible pairs: 37156.
+Best feasible pair: column W16X26, beam W18X35, weight 1324.000 lb.
+Official source page: https://www.aisc.org/aisc/publications/steel-construction-manual/aisc-shapes-database-v160/
+Expected local spreadsheet filename: aisc-shapes-database-v160-2.xlsx.
+The benchmark replaces the synthetic portal-frame section list with externally sourced AISC W-shape properties.
+The checks remain simplified audit constraints and are not a complete AISC code-design approval.
+
+

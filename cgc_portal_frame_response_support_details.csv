@@ -1,0 +1,13 @@
+﻿specimen_id,point_count,envelope_point_count,model,nrmse_service_response,initial_stiffness_relative_error,validation_pass,discrepancy_reason
+SAC2RC01,5381,15,piecewise_linear_envelope_cross_validation,0.037434,0.144696,yes,within declared service-response tolerances
+SAC2RC02,5272,23,piecewise_linear_envelope_cross_validation,0.117908,0.055390,yes,within declared service-response tolerances
+SAC2RC03,5730,21,piecewise_linear_envelope_cross_validation,0.170884,0.217242,no,service-response tolerance exceeded
+SAC2RC04,6426,15,piecewise_linear_envelope_cross_validation,0.109025,0.061367,yes,within declared service-response tolerances
+SAC2RC05,10001,23,piecewise_linear_envelope_cross_validation,0.045851,0.008453,yes,within declared service-response tolerances
+SAC2RC06,8397,14,piecewise_linear_envelope_cross_validation,0.016559,0.107342,yes,within declared service-response tolerances
+SAC2RC07,5489,7,piecewise_linear_envelope_cross_validation,,,no,insufficient service-envelope points after raw-curve filtering
+SAC2RC08,6955,12,piecewise_linear_envelope_cross_validation,0.051284,0.139157,yes,within declared service-response tolerances
+SAC2RC09,7678,4,piecewise_linear_envelope_cross_validation,,,no,insufficient service-envelope points after raw-curve filtering
+SAC2RC10,6163,8,piecewise_linear_envelope_cross_validation,0.076593,0.199479,yes,within declared service-response tolerances
+
+

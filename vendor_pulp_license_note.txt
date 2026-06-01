@@ -1,0 +1,15 @@
+﻿Vendored PuLP/CBC note.
+
+This supplement includes a vendored PuLP 3.3.1 package and CBC binaries only to
+make the finite feasible-set cross-check reproducible on systems where PuLP is
+not already installed. The package retains the upstream license files included
+with the distributed wheel:
+
+- vendor_pulp/pulp-3.3.1.dist-info/licenses/LICENSE
+- vendor_pulp/pulp/solverdir/cbc/*/*coin-license.txt
+
+If local policy does not allow vendored solver binaries, install PuLP from PyPI
+with `python -m pip install pulp==3.3.1` and remove or ignore `vendor_pulp`.
+The benchmark results do not depend on a modified PuLP/CBC distribution.
+
+

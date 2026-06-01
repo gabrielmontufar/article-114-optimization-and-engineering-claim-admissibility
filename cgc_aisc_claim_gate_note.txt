@@ -1,0 +1,6 @@
+AISC catalog claim gate completed.
+The gate combines the clause register, partial oracle comparison, portal-frame code-escalation status, and AISC W-shape catalog audit.
+It authorizes only an AISC W-shape catalog-audit statement with partial code-oracle support.
+It blocks full AISC/ASCE approval, professional certification, seismic detailing approval, connection prequalification, and safety wording.
+Oracle mismatches: 0.
+AISC catalog candidates: 83521; feasible candidates: 37156.

@@ -1,0 +1,5 @@
+﻿external response support metrics summary.
+Status: protocol_defined.
+No published-response claim is allowed unless measured or published response data are supplied and false_certified_count is zero.
+
+

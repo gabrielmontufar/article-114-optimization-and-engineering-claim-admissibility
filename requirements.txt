@@ -1,0 +1,9 @@
+﻿numpy==2.4.4
+openseespy==3.8.0.0
+pillow==12.2.0
+pulp==3.3.1
+pandas==3.0.3
+openpyxl==3.1.5
+
+
+

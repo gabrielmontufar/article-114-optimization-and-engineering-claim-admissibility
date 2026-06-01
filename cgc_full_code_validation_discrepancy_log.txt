@@ -1,0 +1,3 @@
+﻿Partial code-oracle comparison completed with zero classification mismatches. This is a limited oracle check for declared simplified checks and does not constitute full AISC/ASCE design approval.
+
+

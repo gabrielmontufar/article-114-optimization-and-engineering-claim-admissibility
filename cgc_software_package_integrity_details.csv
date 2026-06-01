@@ -1,0 +1,64 @@
+layer,check,status,detail
+application,syntax:cgc_aisc_claim_gate.py,pass,py_compile succeeded
+application,syntax:cgc_aisc_portal_frame_catalog_benchmark.py,pass,py_compile succeeded
+application,syntax:cgc_aisc_source_traceability.py,pass,py_compile succeeded
+application,syntax:cgc_benchmark_reporting_summary.py,pass,py_compile succeeded
+application,syntax:cgc_claim_risk_benchmark.py,pass,py_compile succeeded
+application,syntax:cgc_extended_claim_risk_benchmark.py,pass,py_compile succeeded
+application,syntax:cgc_full_code_validation_oracle_comparison.py,pass,py_compile succeeded
+application,syntax:cgc_manual_oracle_check.py,pass,py_compile succeeded
+application,syntax:cgc_milp_crosscheck_pulp.py,pass,py_compile succeeded
+application,syntax:cgc_negative_control_claim_test.py,pass,py_compile succeeded
+application,syntax:cgc_opensees_blind_crosscheck.py,pass,py_compile succeeded
+application,syntax:cgc_penalty_weight_sweep.py,pass,py_compile succeeded
+application,syntax:cgc_portal_frame_code_benchmark.py,pass,py_compile succeeded
+application,syntax:cgc_portal_frame_full_code_validation.py,pass,py_compile succeeded
+application,syntax:cgc_portal_frame_response_support.py,pass,py_compile succeeded
+application,syntax:cgc_response_support_metrics.py,pass,py_compile succeeded
+application,syntax:cgc_response_support_threshold_sensitivity.py,pass,py_compile succeeded
+application,syntax:cgc_scalar_benchmark.py,pass,py_compile succeeded
+application,syntax:cgc_software_package_integrity.py,pass,py_compile succeeded
+application,syntax:cgc_ten_bar_truss_benchmark.py,pass,py_compile succeeded
+application,syntax:cgc_ten_bar_truss_exhaustive_grouped.py,pass,py_compile succeeded
+application,syntax:cgc_truss_response_support.py,pass,py_compile succeeded
+application,syntax:cgc_uncertainty_robustness_probe.py,pass,py_compile succeeded
+application,syntax:cgc_validation_strength_suite.py,pass,py_compile succeeded
+application,syntax:run_all.py,pass,py_compile succeeded
+application,script_exists:run_all.py,pass,script present
+application,script_exists:cgc_benchmark_reporting_summary.py,pass,script present
+application,script_exists:cgc_claim_risk_benchmark.py,pass,script present
+application,script_exists:cgc_extended_claim_risk_benchmark.py,pass,script present
+application,script_exists:cgc_aisc_claim_gate.py,pass,script present
+application,script_exists:cgc_portal_frame_response_support.py,pass,script present
+application,script_exists:cgc_truss_response_support.py,pass,script present
+application,script_exists:cgc_response_support_threshold_sensitivity.py,pass,script present
+application,script_exists:cgc_aisc_source_traceability.py,pass,script present
+application,script_exists:cgc_portal_frame_full_code_validation.py,pass,script present
+data,schema:cgc_benchmark_reporting_summary.csv,pass,required columns present
+data,schema:cgc_portal_frame_response_support_summary.csv,pass,required columns present
+data,schema:cgc_truss_response_support_summary.csv,pass,required columns present
+data,schema:cgc_aisc_claim_gate_summary.csv,pass,required columns present
+data,schema:cgc_extended_claim_risk_benchmark.csv,pass,required columns present
+data,artifact_exists:README.md,pass,artifact present
+data,artifact_exists:run_all_log.txt,pass,artifact present
+data,artifact_exists:cgc_portal_frame_experimental_response.csv,pass,artifact present
+data,artifact_exists:cgc_portal_frame_raw_data_manifest.csv,pass,artifact present
+data,artifact_exists:cgc_portal_frame_raw_data_acquisition_note.md,pass,artifact present
+data,artifact_exists:cgc_truss_experimental_response.csv,pass,artifact present
+data,artifact_exists:cgc_truss_raw_data_manifest.csv,pass,artifact present
+data,artifact_exists:cgc_truss_raw_data_acquisition_note.md,pass,artifact present
+data,artifact_exists:third_party_raw_data_redistribution_note.md,pass,artifact present
+data,artifact_exists:external_raw_datasets/Zenodo_15658671_SteelTruss/LatentMechanisms_SteelTruss_ExperimentalData.xlsx,pass,artifact present
+data,artifact_exists:vendor_pulp_license_note.txt,pass,artifact present
+data,artifact_exists:cgc_portal_frame_response_support_plot.png,pass,artifact present
+data,artifact_exists:cgc_truss_response_support_plot.png,pass,artifact present
+data,artifact_exists:cgc_response_support_threshold_sensitivity.csv,pass,artifact present
+data,artifact_exists:cgc_aisc_source_traceability.csv,pass,artifact present
+presentation,artifact_exists:An Optimizer Agnostic.docx,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\01 Manuscript\An Optimizer Agnostic.docx
+presentation,artifact_exists:An Optimizer Agnostic.pdf,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\01 Manuscript\An Optimizer Agnostic.pdf
+presentation,artifact_exists:Supplementary_Material.docx,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\02 Supplementary material\Supplementary_Material.docx
+presentation,artifact_exists:supplementary material.zip,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\02 Supplementary material\supplementary material.zip
+presentation,artifact_exists:00 Files for Optimization and Engineering upload,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload
+presentation,zip_path_checked,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\02 Supplementary material\supplementary material.zip
+presentation,zip_forbidden_files,pass,no restricted raw/cache files in ZIP
+presentation,upload_zip_hash_match,skip,final ZIP SHA256 is recorded in the delivery manifest to avoid self-hash recursion

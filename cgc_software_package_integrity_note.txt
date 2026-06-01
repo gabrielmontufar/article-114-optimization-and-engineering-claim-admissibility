@@ -1,0 +1,7 @@
+software-package integrity check for the reproducibility package.
+Presentation layer: manuscript/supplement/PDF/ZIP/upload artifacts and ZIP restrictions.
+Application layer: Python syntax and required script presence.
+Data layer: required CSV schemas, processed datasets, manifests, plots, and status fields.
+Integration layer: the validator writes summary fields back to cgc_benchmark_reporting_summary.csv.
+This is software-package integrity checking only; it is not structural-code approval, legal approval, professional approval, or complete regulatory approval.
+Status: passed; syntax_error_count=0; data_schema_error_count=0; missing_artifact_count=0; upload_package_hash_match=not_applicable.

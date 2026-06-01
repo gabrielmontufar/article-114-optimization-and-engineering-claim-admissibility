@@ -1,0 +1,8 @@
+﻿benchmark,encoded_residual_check,catalog_check,solver_or_enumeration_route,external_computational_check,full_code_validation,response_support,supported_claim
+scalar_catalog,yes,yes,catalog enumeration,not_applicable,not_applicable,not_applicable,encoded logic claim
+grouped_ten_bar_truss,yes,yes,exhaustive grouped enumeration,OpenSeesPy partial cross-check,not_applicable,supported_by_processed_published_response_data,encoded structural-model claim plus published truss-family response support
+portal_frame_code_like,yes,yes,enumeration/script audit,not_performed,partial code-oracle support,supported_by_processed_published_response_data,encoded code-like claim plus limited published steel-frame response support
+aisc_w_shape_portal_frame,yes,yes,AISC W-shape catalog enumeration,AISC external catalog data,partial code-oracle support,supported_by_processed_published_response_data,AISC W-shape catalog audit plus limited published steel-frame response support; not AISC clause-compliance audit
+monte_carlo_uncertainty_probe,yes,yes,Monte Carlo sampling,uncertainty boundary probe,not_applicable,not_applicable,nominal-not-robust boundary claim
+
+

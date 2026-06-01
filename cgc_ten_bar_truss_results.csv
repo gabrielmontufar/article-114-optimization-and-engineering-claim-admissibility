@@ -1,0 +1,6 @@
+﻿formulation,method,weight_lb,max_stress_ratio,max_disp_ratio,stress_residual,disp_residual,constructability_residual,elapsed_s,areas_in2,supported_claim
+soft penalty,catalog random search with low penalty weight,1175.116882,3.713361,9.230336,2.713361,8.230336,0.000000,17.385345,3.000 3.000 6.000 0.500 4.000 2.000 4.000 0.500 1.500 4.000,No strict encoded-compliance certificate
+continuous hard constraints,continuous random feasible search,9766.759694,0.367461,0.996931,0.000000,0.000000,1.000000,23.070673,31.597 15.836 34.002 12.042 15.837 4.554 30.714 24.336 29.674 26.597,Mathematical feasibility only
+discrete MINLP hard constraints,catalog random feasible search,10321.402589,0.473414,0.999982,0.000000,0.000000,0.000000,0.457175,25.000 25.000 30.000 30.000 4.000 3.000 30.000 30.000 30.000 30.000,Conditional encoded compliance
+
+

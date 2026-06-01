@@ -1,0 +1,9 @@
+Claim-risk benchmark for conditional compliance certificates.
+Purpose: quantify when an optimized or generated design supports only an optimization-result claim versus a conditional encoded-compliance claim.
+Primary classification is ordinal: positive residual or unsupported encoded feasibility yields high claim risk; zero residual plus encoded feasibility but no recorded certificate yields moderate claim risk; zero residual plus encoded feasibility plus recorded enumeration/solver route yields low claim risk.
+The numeric score is not a safety factor and not a code approval metric; it is a secondary reproducible audit index based on residual exposure, encoded feasibility, certificate availability, and penalty-only selection.
+Sensitivity file: cgc_claim_risk_sensitivity.csv; weight sets evaluated: baseline, residual_heavy, certificate_heavy, feasibility_heavy.
+Rows evaluated: 19.
+Low-risk claim rows: 6.
+High-risk claim rows: 9.
+This benchmark is the novelty pivot of the manuscript: it evaluates the epistemic status of the claim attached to an optimization result, not only the objective value.

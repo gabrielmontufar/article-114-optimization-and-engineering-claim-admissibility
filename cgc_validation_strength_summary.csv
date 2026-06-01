@@ -1,0 +1,8 @@
+﻿strategy,runs,samples_per_seed,feasible_hit_rate,mean_max_residual,max_max_residual,mean_optimality_gap_vs_exact_feasible_only,best_optimality_gap_vs_exact_feasible_only
+hard_random,20,1000,1.000,0.000000,0.000000,0.105312,0.050317
+penalty_w_100,20,1000,0.000,8.379394,13.682338,,
+penalty_w_1000,20,1000,0.000,1.468656,2.310660,,
+penalty_w_20000,20,1000,0.650,0.014607,0.083366,0.101452,0.050317
+penalty_w_5000,20,1000,0.000,0.342777,0.598528,,
+
+

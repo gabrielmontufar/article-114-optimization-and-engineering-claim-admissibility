@@ -1,0 +1,59 @@
+﻿{
+  "certificate_id": "CGC-2026-PORTAL-001",
+  "project_status": "conditional_encoded_claim",
+  "purpose": "Structured handoff from optimization audit to later virtual testing or full-code checking.",
+  "geometry": {
+    "units": "in_lbf",
+    "nodes": [
+      [0.0, 0.0],
+      [360.0, 0.0],
+      [720.0, 0.0]
+    ],
+    "members": [
+      [0, 1],
+      [1, 2]
+    ]
+  },
+  "assigned_sections": {
+    "member_0": "W16X26",
+    "member_1": "W18X35"
+  },
+  "encoded_checks": {
+    "elastic_drift": {
+      "limit": 2.0,
+      "max_observed": 1.45,
+      "residual": 0.0,
+      "status": "satisfied"
+    },
+    "nominal_demand_capacity": {
+      "limit": 1.0,
+      "max_observed": 0.89,
+      "residual": 0.0,
+      "status": "satisfied"
+    },
+    "catalog_membership": {
+      "catalog": "AISC W-shapes",
+      "status": "satisfied"
+    }
+  },
+  "declared_exclusions": [
+    "full AISC 360 design approval",
+    "AISC 341 seismic detailing",
+    "connection design and bolt edge distances",
+    "nonlinear post-buckling validation",
+    "experimental external response support"
+  ],
+  "verification_route": {
+    "method": "finite catalog enumeration plus PuLP/CBC candidate-set cross-check",
+    "solver_status": "optimal over declared feasible candidate set",
+    "scope": "encoded checks only"
+  },
+  "handoff_targets": [
+    "OpenSeesPy nonlinear virtual testing",
+    "commercial full-code design-checking API",
+    "physical laboratory test planning"
+  ]
+}
+
+
+

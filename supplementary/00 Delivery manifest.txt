@@ -1,32 +1,45 @@
-﻿Engineering Optimization submission package manifest
-Updated: 2026-05-21
+﻿Optimization and Engineering upload package manifest
+Updated: 2026-06-01
 
 Manuscript title:
-An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs
+Optimizer-Agnostic Claim-Admissibility for Discrete Structural Design Optimization Outputs
+
+Upload source of truth:
+Use only the files inside this folder tree:
+C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload
+
+Note: this is the current Optimization and Engineering upload package. Use this folder tree only for submission.
 
 Package contents:
-1. 01 Manuscript/Conditional_Compliance_Claims_Engineering_Optimization_uniformized.docx
-2. 01 Manuscript/Conditional_Compliance_Claims_Engineering_Optimization_uniformized.pdf
+1. 01 Manuscript/An Optimizer Agnostic.docx
+2. 01 Manuscript/An Optimizer Agnostic.pdf
 3. 02 Supplementary material/Supplementary_Material.docx
 4. 02 Supplementary material/supplementary material.zip
-5. 03 Cover letter/cover_letter_Engineering_Optimization.docx
+5. 03 Cover letter/cover_letter_Optimization_and_Engineering.docx
 
 Public supplementary repository:
-https://github.com/gabrielmontufar/article-114-engineering-optimization-claim-assurance
+https://github.com/gabrielmontufar/article-114-optimization-and-engineering-claim-admissibility
 
 Submission structure note:
-- The supplementary Word document is intentionally outside the ZIP as a separate upload file.
-- The ZIP contains only the reproducibility package: scripts, processed CSV outputs, plots, manifests, notes, requirements, and logs.
+- The supplementary Word document is intentionally provided as a separate upload file and is also copied inside the ZIP so reviewers who inspect only the archive can access Supplementary Material S1-S8.
+- The ZIP contains the reproducibility package: scripts, processed CSV outputs, plots, manifests, notes, requirements, logs, and the supplementary Word document.
 - The public GitHub repository contains both the supplementary Word document and the clean reproducibility archive.
-- Loose helper scripts and CSVs were removed from the upload folder because they are already represented inside the ZIP and could confuse version control during submission.
+- Loose helper scripts and CSVs were removed from the upload folder because they are represented inside the ZIP and could confuse version control during submission.
+- Backups were moved to 99 Internal verification not for upload and must not be uploaded.
 
-Technical status:
-- Main manuscript repositioned as an optimizer-agnostic, post-optimality claim-admissibility layer for Engineering Optimization outputs.
-- Main manuscript readability pass completed: three embedded main-text figures were added, Word heading styles were normalized, Table 8 was corrected to Table 2, and the reference list was alphabetized with no uncited references or orphan in-text citations detected.
-- Published physical-response evidence added for steel-frame response data from DesignSafe/NEES and truss response data from Zenodo. The raw Zenodo steel-truss workbook is included in the ZIP because the source record declares CC BY 4.0 licensing. The raw DesignSafe/NEES portal-frame files and the AISC Shapes Database spreadsheet are not redistributed because open redistribution permission was not confirmed for those third-party resources; processed reproducible CSVs, manifests, acquisition notes, and scripts are included.
-- Software full-stack validation added: presentation artifacts, application scripts, Python syntax, CSV schemas, processed data, ZIP exclusions, and upload ZIP hash consistency are validated.
-- Current software validation status: passed; syntax_error_count=0; data_schema_error_count=0; missing_artifact_count=0; upload_package_hash_match=yes.
-- Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, and reproducibility-package software validation. It does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
-- Clean supplementary ZIP includes the CC BY 4.0 Zenodo raw workbook and excludes the AISC spreadsheet, DesignSafe/NEES raw files, cache folders, and pyc files; acquisition notes, manifests, and the third-party raw-data redistribution note are included.
-- Full local rebuild was verified with python run_all.py --continue-on-error on 2026-05-21; all scripts returned code 0. Extracted ZIP quick rebuild was also verified with python run_all.py --quick.
+Optimization and Engineering fit status as of 2026-06-01:
+- Scope alignment strengthened around discrete optimization, black-box and optimizer-agnostic workflows, optimization software, benchmarking, and structural design case studies.
+- Main manuscript DOCX verified with Word COM: 6542 words, 40 pages, 2 tables.
+- Main manuscript PDF exported from the current DOCX on 2026-06-01.
+- Supplementary Word document verified with Word COM: 1880 words, 19 pages, 4 tables.
+- Cover letter verified with Word COM: 325 words, 2 pages, 0 tables.
+- Supplementary ZIP verified: 164 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and Supplementary_Material.docx, excludes AISC spreadsheet, excludes pyc/cache files, excludes the legacy full-code AISC validator filename, excludes prior-target metadata strings, excludes legacy response-overclaim labels, and excludes legacy response-support overclaim labels, SHA256 0BF2AB4B601119C3EC36C74B227BE9F4DF4CD29FD0A4513ADBD41C66B6AF2943.
+- Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, optimization-software benchmarking, and reproducibility-package software-package integrity checks.
+- The package does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
+
+
+
+
+
+
 

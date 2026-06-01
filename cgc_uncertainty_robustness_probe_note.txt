@@ -1,0 +1,8 @@
+﻿Monte Carlo robustness probe for the ten-bar claim certificate.
+Random seed: 20260520. Samples per design: 2000.
+Independent uniform perturbations: load scale and elastic modulus in [1-0.10, 1+0.10].
+Purpose: test whether a nominal zero-residual certificate should be described as robust under parameter perturbation.
+Interpretation: a nominal encoded-compliance certificate is not automatically a robust certificate; robust wording requires all sampled perturbed residuals to remain zero or an explicit margin argument.
+Outputs: cgc_uncertainty_robustness_probe.csv and this note.
+
+

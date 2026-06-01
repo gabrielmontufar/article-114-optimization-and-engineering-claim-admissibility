@@ -1,0 +1,51 @@
+﻿Supplementary material map S1-S8
+
+S1. Mathematical formulation and constraint catalog
+Location: Supplementary Material - An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs.docx
+
+S2. Benchmark definitions and extended tables
+Location: Supplementary Material DOCX plus scripts/outputs:
+cgc_scalar_benchmark.py
+cgc_ten_bar_truss_benchmark.py
+cgc_ten_bar_truss_exhaustive_grouped.py
+cgc_portal_frame_code_benchmark.py
+cgc_milp_crosscheck_pulp.py
+
+S3. Penalty-weight sensitivity and supported-claim details
+Location:
+cgc_penalty_weight_sweep.py
+cgc_penalty_weight_sweep.csv
+cgc_claim_risk_benchmark.py
+cgc_claim_risk_benchmark.csv
+cgc_claim_risk_benchmark_note.txt
+
+S4. Independent OpenSeesPy blind FEM cross-check
+Location:
+cgc_opensees_blind_crosscheck.py
+cgc_opensees_blind_crosscheck.csv
+cgc_opensees_blind_crosscheck_note.txt
+
+S5. AISC W-shape real-catalog portal-frame audit
+Location:
+cgc_aisc_portal_frame_catalog_benchmark.py
+cgc_aisc_portal_frame_catalog_benchmark.csv
+cgc_aisc_portal_frame_catalog_benchmark.png
+cgc_aisc_portal_frame_catalog_benchmark_note.txt
+aisc_source_acquisition_note.txt
+
+S6. Certificate propositions and scope limits
+Location: Supplementary Material - An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs.docx
+
+S7. Monte Carlo robustness boundary probe
+Location:
+cgc_uncertainty_robustness_probe.py
+cgc_uncertainty_robustness_probe.csv
+cgc_uncertainty_robustness_probe_note.txt
+
+S8. Alignment with original-research reporting guides
+Location:
+Supplementary Material - An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs.docx
+auditoria_guias_articulo_investigacion_original_20260520.md
+
+
+

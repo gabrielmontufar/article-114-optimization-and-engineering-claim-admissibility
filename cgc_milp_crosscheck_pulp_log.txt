@@ -1,0 +1,26 @@
+﻿benchmark=grouped_ten_bar_truss
+solver=PuLP CBC
+pulp_version=3.3.1
+status=Optimal
+objective=9567.522071561416
+total_enumerated=100000
+feasible_candidates=3518
+binary_variables=3518
+constraints=1
+elapsed_s=0.114260
+design=32.000 32.000 1.000 24.000 24.000
+
+benchmark=portal_frame_code_like
+solver=PuLP CBC
+pulp_version=3.3.1
+status=Optimal
+objective=8241.6
+total_enumerated=25
+feasible_candidates=5
+binary_variables=5
+constraints=1
+elapsed_s=0.022382
+design=column=S3; beam=S4
+
+
+

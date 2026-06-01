@@ -1,0 +1,4 @@
+formulation,selected_area_mm2,strength_residual,serviceability_residual,constructability_residual,supported_claim
+soft penalty,800,0.5,0.75,0.0,no strict encoded-compliance certificate
+continuous hard constraints,1400,0.0,0.0,1.0,feasible mathematically but not catalog-buildable
+discrete catalog hard-constraint enumeration,1500,0.0,0.0,0.0,conditional encoded-compliance claim

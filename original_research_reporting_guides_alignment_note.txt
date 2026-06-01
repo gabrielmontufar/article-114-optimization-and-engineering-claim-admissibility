@@ -1,0 +1,17 @@
+﻿Original-research reporting guides alignment note
+
+The manuscript was checked against transferable elements of ICMJE, MDAR, and EQUATOR-oriented reporting guidance for original research.
+
+Applicable to this computational engineering methods study:
+- structured objective, methods, results, discussion, limitations, references, tables, units;
+- reproducible computational methods, scripts, software requirements, solver status, and runtime scope;
+- data/code availability and supplementary replication files;
+- ethics non-applicability statement for human/animal/clinical research;
+- competing-interest, funding, author-contribution, and AI-assisted-tool disclosures;
+- explicit boundaries preventing nominal encoded compliance from being overstated as robust, physical, or complete regulatory approval.
+
+Not applicable:
+CONSORT, STROBE, PRISMA, ARRIVE, CARE, STARD, COREQ, IRB approval, informed consent, clinical trial registration, animals, cells, antibodies, plants, microbes, or human-participant demographic reporting.
+
+
+

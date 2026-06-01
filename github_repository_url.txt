@@ -1,7 +1,11 @@
-Public GitHub repository for the article 114 Engineering Optimization supplementary material:
+﻿Public GitHub repository for the article 114 Optimization and Engineering supplementary material:
 
-https://github.com/gabrielmontufar/article-114-engineering-optimization-claim-assurance
+https://github.com/gabrielmontufar/article-114-optimization-and-engineering-claim-admissibility
 
-Repository contents include the supplementary Word document, the clean reproducibility archive, public README, manifests, acquisition notes, processed validation points, and software/package validation outputs.
+Repository contents include the supplementary Word document, the clean reproducibility archive, public README, manifests, acquisition notes, processed response-support points, and software/package integrity outputs.
 
-Redistribution boundary: the raw Zenodo steel-truss workbook is included because the source record declares a Creative Commons Attribution 4.0 International license. Raw DesignSafe/NEES portal-frame files and the AISC Shapes Database spreadsheet are not redistributed because open redistribution permission was not confirmed; the package provides processed validation points, manifests, acquisition notes, and instructions for reviewers to obtain those sources.
+Redistribution boundary: the raw Zenodo steel-truss workbook is included because the source record declares a Creative Commons Attribution 4.0 International license. Raw DesignSafe/NEES portal-frame files and the AISC Shapes Database spreadsheet are not redistributed because open redistribution permission was not confirmed; the package provides processed response-support points, manifests, acquisition notes, and instructions for reviewers to obtain those sources.
+
+
+
+

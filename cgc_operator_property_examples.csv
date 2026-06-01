@@ -1,0 +1,10 @@
+﻿property,benchmark_case,evidence_state,operator_input,expected_claim_level,interpretation
+missing_evidence_blocking,scalar_catalog_soft_penalty,positive_residual_no_encoded_feasibility,"candidate plus encoded-compliance claim",L0_optimization_result_only,"objective value cannot authorize encoded-compliance wording when residual evidence is positive"
+claim_level_escalation,scalar_catalog_discrete_hard_constraint,zero_residual_catalog_member_enumeration_route,"candidate plus encoded-compliance claim",L1_encoded_compliance_support,"residual and catalog evidence authorize only the encoded claim level"
+compatible_evidence_monotonicity,portal_frame_code_like_partial_oracle,zero_residual_catalog_route_partial_code_oracle,"same candidate plus declared code-like claim",L3_partial_code_oracle_support,"adding compatible independent oracle evidence can raise the supported level from encoded evidence to partial code-oracle support"
+contradictory_evidence_downgrade,portal_frame_code_like_discrepancy_case,contradictory_or_failed_external_check,"candidate plus declared code-like claim",downgraded_or_blocked,"new evidence that contradicts the encoded claim triggers downgrade or blocking rather than monotone escalation"
+missing_evidence_blocking,aisc_w_shape_catalog_audit,no_full_clause_coverage_no_professional_review,"candidate plus AISC approval claim",downgraded_to_catalog_audit_only,"AISC catalog audit evidence cannot be promoted to AISC approval or professional certification"
+idempotence,grouped_ten_bar_truss_exhaustive_hard_constraints,same_certificate_reapplied,"Phi(Phi-output,same evidence record)",same_claim_level,"reapplying the operator to the same candidate and unchanged evidence record cannot increase the claim level"
+scope_monotonicity,monte_carlo_uncertainty_probe,nominal_certificate_with_uncertainty_boundary_probe,"candidate plus robust-design claim",boundary_probe_only_no_robust_claim,"uncertainty probing records the boundary but does not authorize robust-design wording"
+
+

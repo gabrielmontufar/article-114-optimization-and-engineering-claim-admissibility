@@ -1,0 +1,9 @@
+﻿OpenSeesPy blind cross-check for the ten-bar encoded-claim benchmark.
+Cases checked: 45; successful OpenSeesPy solves: 45.
+Feasibility-classification mismatches: 0.
+Maximum absolute stress-ratio difference: 3.552713678801e-15.
+Maximum absolute displacement-ratio difference: 7.105427357601e-15.
+Purpose: independently check the custom stiffness-matrix evaluator against an external open-source FEM engine.
+Outputs: cgc_opensees_blind_crosscheck.csv and this note.
+
+

@@ -1,0 +1,7 @@
+cgc_benchmark_reporting_summary.py,returncode=0,elapsed_s=0.179
+cgc_response_support_threshold_sensitivity.py,returncode=0,elapsed_s=0.157
+cgc_aisc_source_traceability.py,returncode=0,elapsed_s=0.179
+cgc_claim_risk_benchmark.py,returncode=0,elapsed_s=0.157
+cgc_extended_claim_risk_benchmark.py,returncode=0,elapsed_s=0.162
+cgc_aisc_claim_gate.py,returncode=0,elapsed_s=0.168
+cgc_software_package_integrity.py,returncode=0,elapsed_s=0.486

@@ -1,0 +1,6 @@
+﻿specimen_id,benchmark_family,design_id,claim_status,measured_load,predicted_load,measured_displacement,predicted_displacement,measured_strain,predicted_strain,relative_error_displacement,relative_error_strain,experimental_feasible,encoded_feasible,classification_match,max_encoded_residual,notes
+PROTOCOL-TRUSS-01,ten_bar_truss,to_be_tested,protocol_defined,,,,,,,,,not_performed,yes,not_applicable,0.0,Protocol row only; no physical or published response data supplied
+PROTOCOL-FRAME-01,portal_frame,to_be_tested,protocol_defined,,,,,,,,,not_performed,yes,not_applicable,0.0,Protocol row only; no physical or published response data supplied
+
+
+

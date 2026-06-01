@@ -1,0 +1,17 @@
+﻿AISC source acquisition note
+
+The AISC W-shape portal-frame benchmark uses the AISC Shapes Database v16.0 spreadsheet.
+Official source page:
+https://www.aisc.org/aisc/publications/steel-construction-manual/aisc-shapes-database-v160/
+
+Local filename used during verification:
+aisc-shapes-database-v160-2.xlsx
+
+The spreadsheet is not redistributed in the clean supplementary ZIP. To reproduce the AISC catalog audit, download the spreadsheet from the official AISC page, place it in the supplementary_files directory with the filename above, and run:
+
+python cgc_aisc_portal_frame_catalog_benchmark.py
+
+The script output used in the manuscript is included as CSV, PNG, and TXT files.
+
+
+

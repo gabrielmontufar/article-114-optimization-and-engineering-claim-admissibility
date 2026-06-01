@@ -1,0 +1,6 @@
+negative_case,inserted_violation,encoded_feasible,catalog_valid,verification_route,reported_claim,expected_result,observed_result,claim_blocked_or_downgraded,false_certified
+off_catalog_section,section is not in declared catalog,no,no,enumeration,conditional encoded-compliance claim,no certificate,no certificate,yes,no
+positive_residual,drift or demand/capacity residual is positive,no,yes,enumeration,conditional encoded-compliance claim,high claim risk,high claim risk,yes,no
+missing_solver_route,zero residual but no recorded solver/enumeration route,yes,yes,missing,conditional encoded-compliance claim,moderate claim risk,moderate claim risk,yes,no
+aisc_wording_overclaim,AISC approval claimed with only catalog audit,yes,yes,AISC catalog enumeration,unsupported AISC approval wording,unsupported claim,unsupported claim,yes,no
+robust_wording_overclaim,robust claim asserted for nominal-only feasible design,yes,yes,nominal enumeration,robust response support,no robust claim,no robust claim,yes,no

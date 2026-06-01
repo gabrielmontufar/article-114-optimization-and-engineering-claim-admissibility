@@ -1,0 +1,13 @@
+family,nrmse_limit,stiffness_error_limit,detection_rate_limit,passing_count,screened_count,insufficient_count,false_certified_count,interpretation
+portal_frame,0.10,0.15,not_applicable,4,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.10,0.20,not_applicable,5,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.10,0.25,not_applicable,5,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.15,0.15,not_applicable,6,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.15,0.20,not_applicable,7,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.15,0.25,not_applicable,7,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.20,0.15,not_applicable,6,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.20,0.20,not_applicable,7,10,2,0,response-support sensitivity only; not safety certification
+portal_frame,0.20,0.25,not_applicable,8,10,2,0,response-support sensitivity only; not safety certification
+truss,not_applicable,not_applicable,0.45,6,7,0,0,response-support sensitivity only; not safety certification
+truss,not_applicable,not_applicable,0.50,6,7,0,0,response-support sensitivity only; not safety certification
+truss,not_applicable,not_applicable,0.55,5,7,0,0,response-support sensitivity only; not safety certification

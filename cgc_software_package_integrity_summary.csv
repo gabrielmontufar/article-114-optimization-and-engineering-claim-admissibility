@@ -1,0 +1,2 @@
+validator,software_package_integrity_status,syntax_error_count,data_schema_error_count,missing_artifact_count,upload_package_hash_match,software_layer_validation_claim
+cgc_software_package_integrity,passed,0,0,0,not_applicable,software-package integrity check passed for the reproducibility package

@@ -1,0 +1,9 @@
+﻿example_id,code,edition,member_type,check_type,input_source,manual_or_oracle_value,script_value,relative_error,pass_fail_oracle,pass_fail_script,classification_match,discrepancy_reason
+PF-S1,AISC 360,2022,portal_frame,beam_flexure_DCR,independent_formula_oracle,0.914286,0.914286,0.000000,pass,pass,yes,none
+PF-S2,AISC 360,2022,portal_frame,column_flexure_DCR,independent_formula_oracle,0.370286,0.370286,0.000000,pass,pass,yes,none
+PF-S3,AISC 360,2022,portal_frame,beam_shear_DCR,independent_formula_oracle,0.711111,0.711111,0.000000,pass,pass,yes,none
+PF-S4,AISC 360,2022,portal_frame,column_shear_DCR,independent_formula_oracle,0.064000,0.064000,0.000000,pass,pass,yes,none
+PF-S5,ASCE 7,2022,portal_frame,service_drift_ratio,declared_service_load_oracle,0.404168,0.404168,0.000000,pass,pass,yes,none
+PF-S6,AISC 360,2022,portal_frame,scope_exclusion_check,clause_register,1.000000,1.000000,0.000000,pass,pass,yes,excluded clauses correctly prevent full-code claim
+
+

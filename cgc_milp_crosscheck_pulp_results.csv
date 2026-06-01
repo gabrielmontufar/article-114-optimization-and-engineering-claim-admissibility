@@ -1,0 +1,5 @@
+﻿beam_shear_ratio,benchmark,binary_variables,candidate_count,column_shear_ratio,constraints,constructability_residual,design,disp_residual,elapsed_s,feasible_candidates,max_disp_ratio,max_stress_ratio,objective,pulp_version,scwb_ratio,selected_index,solver,status,stress_residual,total_enumerated,weight
+,grouped_ten_bar_truss,3518,3518,,1,0.0,32.000 32.000 1.000 24.000 24.000,0.0,0.11426010000286624,3518,0.9867640687119291,0.3750000000000002,9567.522071561416,3.3.1,,738,PuLP CBC,Optimal,0.0,100000,9567.522071561416
+0.23703703703703705,portal_frame_code_like,5,5,0.06153846153846154,1,0.0,column=S3; beam=S4,0.0,0.022381699993275106,5,0.07113166676424097,0.9142857142857143,8241.6,3.3.1,1.0238095238095237,0,PuLP CBC,Optimal,0.0,25,8241.6
+
+

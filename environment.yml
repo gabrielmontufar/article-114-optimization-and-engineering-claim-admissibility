@@ -1,0 +1,15 @@
+﻿name: encoded-claim-optimization
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy=2.4.4
+  - pandas=3.0.3
+  - openpyxl=3.1.5
+  - pillow=12.2.0
+  - pip:
+      - pulp==3.3.1
+      - openseespy==3.8.0.0
+
+

@@ -1,0 +1,5 @@
+﻿case,samples,perturbation_box,group_areas_in2,nominal_weight_lb,feasible_rate,max_stress_ratio_mean,max_stress_ratio_max,max_disp_ratio_mean,max_disp_ratio_max,max_residual_mean,max_residual_max,robust_encoded_feasible_under_probe
+exact_grouped_certificate_nominal,2000,+/-10% load and elastic modulus,32.000 32.000 1.000 24.000 24.000,9567.522072,0.551500,0.375615,0.412480,0.992251,1.202079,0.029475,0.202079,no
+near_boundary_penalty_selected,2000,+/-10% load and elastic modulus,24.000 40.000 2.000 24.000 24.000,9639.522072,0.367500,0.489362,0.536812,1.034236,1.250070,0.052961,0.250070,no
+
+

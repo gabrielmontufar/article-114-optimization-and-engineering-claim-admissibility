@@ -1,0 +1,77 @@
+benchmark,case,weight_set,score,ordinal_label
+scalar_catalog,soft penalty,baseline,0.650000,high claim risk
+scalar_catalog,soft penalty,residual_heavy,0.675000,high claim risk
+scalar_catalog,soft penalty,certificate_heavy,0.487500,high claim risk
+scalar_catalog,soft penalty,feasibility_heavy,0.750000,high claim risk
+scalar_catalog,continuous hard constraints,baseline,0.700000,high claim risk
+scalar_catalog,continuous hard constraints,residual_heavy,0.800000,high claim risk
+scalar_catalog,continuous hard constraints,certificate_heavy,0.500000,high claim risk
+scalar_catalog,continuous hard constraints,feasibility_heavy,0.800000,high claim risk
+scalar_catalog,discrete catalog hard-constraint enumeration,baseline,0.000000,low claim risk
+scalar_catalog,discrete catalog hard-constraint enumeration,residual_heavy,0.000000,low claim risk
+scalar_catalog,discrete catalog hard-constraint enumeration,certificate_heavy,0.000000,low claim risk
+scalar_catalog,discrete catalog hard-constraint enumeration,feasibility_heavy,0.000000,low claim risk
+grouped_ten_bar_truss,exhaustive hard constraints,baseline,0.000000,low claim risk
+grouped_ten_bar_truss,exhaustive hard constraints,residual_heavy,0.000000,low claim risk
+grouped_ten_bar_truss,exhaustive hard constraints,certificate_heavy,0.000000,low claim risk
+grouped_ten_bar_truss,exhaustive hard constraints,feasibility_heavy,0.000000,low claim risk
+grouped_ten_bar_truss,soft penalty w=100,baseline,0.750000,high claim risk
+grouped_ten_bar_truss,soft penalty w=100,residual_heavy,0.825000,high claim risk
+grouped_ten_bar_truss,soft penalty w=100,certificate_heavy,0.550000,high claim risk
+grouped_ten_bar_truss,soft penalty w=100,feasibility_heavy,0.825000,high claim risk
+grouped_ten_bar_truss,soft penalty w=1000,baseline,0.750000,high claim risk
+grouped_ten_bar_truss,soft penalty w=1000,residual_heavy,0.825000,high claim risk
+grouped_ten_bar_truss,soft penalty w=1000,certificate_heavy,0.550000,high claim risk
+grouped_ten_bar_truss,soft penalty w=1000,feasibility_heavy,0.825000,high claim risk
+grouped_ten_bar_truss,soft penalty w=5000,baseline,0.504558,high claim risk
+grouped_ten_bar_truss,soft penalty w=5000,residual_heavy,0.456838,high claim risk
+grouped_ten_bar_truss,soft penalty w=5000,certificate_heavy,0.396599,high claim risk
+grouped_ten_bar_truss,soft penalty w=5000,feasibility_heavy,0.640919,high claim risk
+grouped_ten_bar_truss,soft penalty w=20000,baseline,0.050000,moderate claim risk
+grouped_ten_bar_truss,soft penalty w=20000,residual_heavy,0.025000,moderate claim risk
+grouped_ten_bar_truss,soft penalty w=20000,certificate_heavy,0.050000,moderate claim risk
+grouped_ten_bar_truss,soft penalty w=20000,feasibility_heavy,0.025000,moderate claim risk
+portal_frame_code_like,soft penalty w=500,baseline,0.750000,high claim risk
+portal_frame_code_like,soft penalty w=500,residual_heavy,0.825000,high claim risk
+portal_frame_code_like,soft penalty w=500,certificate_heavy,0.550000,high claim risk
+portal_frame_code_like,soft penalty w=500,feasibility_heavy,0.825000,high claim risk
+portal_frame_code_like,soft penalty w=20000,baseline,0.050000,moderate claim risk
+portal_frame_code_like,soft penalty w=20000,residual_heavy,0.025000,moderate claim risk
+portal_frame_code_like,soft penalty w=20000,certificate_heavy,0.050000,moderate claim risk
+portal_frame_code_like,soft penalty w=20000,feasibility_heavy,0.025000,moderate claim risk
+portal_frame_code_like,exhaustive hard constraints,baseline,0.000000,low claim risk
+portal_frame_code_like,exhaustive hard constraints,residual_heavy,0.000000,low claim risk
+portal_frame_code_like,exhaustive hard constraints,certificate_heavy,0.000000,low claim risk
+portal_frame_code_like,exhaustive hard constraints,feasibility_heavy,0.000000,low claim risk
+aisc_w_shape_portal_frame,soft penalty w=500,baseline,0.529186,high claim risk
+aisc_w_shape_portal_frame,soft penalty w=500,residual_heavy,0.493778,high claim risk
+aisc_w_shape_portal_frame,soft penalty w=500,certificate_heavy,0.411991,high claim risk
+aisc_w_shape_portal_frame,soft penalty w=500,feasibility_heavy,0.659389,high claim risk
+aisc_w_shape_portal_frame,soft penalty w=20000,baseline,0.050000,moderate claim risk
+aisc_w_shape_portal_frame,soft penalty w=20000,residual_heavy,0.025000,moderate claim risk
+aisc_w_shape_portal_frame,soft penalty w=20000,certificate_heavy,0.050000,moderate claim risk
+aisc_w_shape_portal_frame,soft penalty w=20000,feasibility_heavy,0.025000,moderate claim risk
+aisc_w_shape_portal_frame,exhaustive AISC hard constraints,baseline,0.000000,low claim risk
+aisc_w_shape_portal_frame,exhaustive AISC hard constraints,residual_heavy,0.000000,low claim risk
+aisc_w_shape_portal_frame,exhaustive AISC hard constraints,certificate_heavy,0.000000,low claim risk
+aisc_w_shape_portal_frame,exhaustive AISC hard constraints,feasibility_heavy,0.000000,low claim risk
+openseespy_external_fem_crosscheck,45_case_blind_feasibility_classification,baseline,0.100000,moderate claim risk
+openseespy_external_fem_crosscheck,45_case_blind_feasibility_classification,residual_heavy,0.075000,moderate claim risk
+openseespy_external_fem_crosscheck,45_case_blind_feasibility_classification,certificate_heavy,0.200000,moderate claim risk
+openseespy_external_fem_crosscheck,45_case_blind_feasibility_classification,feasibility_heavy,0.075000,moderate claim risk
+monte_carlo_uncertainty_probe,exact_grouped_certificate_nominal,baseline,0.480832,high claim risk
+monte_carlo_uncertainty_probe,exact_grouped_certificate_nominal,residual_heavy,0.396247,high claim risk
+monte_carlo_uncertainty_probe,exact_grouped_certificate_nominal,certificate_heavy,0.500520,high claim risk
+monte_carlo_uncertainty_probe,exact_grouped_certificate_nominal,feasibility_heavy,0.635624,high claim risk
+monte_carlo_uncertainty_probe,near_boundary_penalty_selected,baseline,0.550028,high claim risk
+monte_carlo_uncertainty_probe,near_boundary_penalty_selected,residual_heavy,0.450042,high claim risk
+monte_carlo_uncertainty_probe,near_boundary_penalty_selected,certificate_heavy,0.562518,high claim risk
+monte_carlo_uncertainty_probe,near_boundary_penalty_selected,feasibility_heavy,0.675021,high claim risk
+grouped_ten_bar_truss,PuLP_CBC_cross_check,baseline,0.000000,low claim risk
+grouped_ten_bar_truss,PuLP_CBC_cross_check,residual_heavy,0.000000,low claim risk
+grouped_ten_bar_truss,PuLP_CBC_cross_check,certificate_heavy,0.000000,low claim risk
+grouped_ten_bar_truss,PuLP_CBC_cross_check,feasibility_heavy,0.000000,low claim risk
+portal_frame_code_like,PuLP_CBC_cross_check,baseline,0.000000,low claim risk
+portal_frame_code_like,PuLP_CBC_cross_check,residual_heavy,0.000000,low claim risk
+portal_frame_code_like,PuLP_CBC_cross_check,certificate_heavy,0.000000,low claim risk
+portal_frame_code_like,PuLP_CBC_cross_check,feasibility_heavy,0.000000,low claim risk

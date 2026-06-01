@@ -1,0 +1,12 @@
+﻿code,edition,clause_id,clause_topic,engineering_claim,required_inputs,implemented_check,residual_name,units,tolerance,status,oracle_source,notes
+ASCE 7,2022,ASCE7-load-combinations,load combinations,declared LRFD/service load combinations are traceable,dead/live/lateral loads and factors,load-combination mapping only,load_combo_residual,dimensionless,1e-9,protocol_defined,ASCE 7-22 scope page,ASCE 7-22 is cited as the loading standard; full clause text is not reproduced
+AISC 360,2022,AISC360-flexure,flexural strength,beam flexural demand is below declared nominal resistance,section modulus/Fy/loads/member length,simplified elastic flexure DCR,beam_flexure_residual,dimensionless,1e-9,encoded_simplified,independent script oracle,Not a full AISC chapter check
+AISC 360,2022,AISC360-compression,compression strength,column demand is below declared nominal resistance,area/Fy/effective length,protocol placeholder,column_compression_residual,dimensionless,1e-9,protocol_defined,not yet compared,Requires full slenderness and stability implementation
+AISC 360,2022,AISC360-interaction,combined axial/flexure,beam-column interaction demand is below declared limit,axial demand/moment demand/capacity,protocol placeholder,interaction_residual,dimensionless,1e-9,protocol_defined,not yet compared,Requires selected AISC interaction equation and boundary assumptions
+AISC 360,2022,AISC360-shear,shear strength,member shear demand is below declared nominal resistance,shear area/Fy/load,code-like shear DCR,member_shear_residual,dimensionless,1e-9,encoded_simplified,independent script oracle,Not a full AISC shear chapter check
+AISC 360,2022,AISC360-stability,second-order effects and global stability,frame stability is explicitly resolved or excluded,gravity/lateral loads/stiffness/P-Delta,not implemented,stability_residual,dimensionless,1e-9,out_of_scope,not applicable,Current benchmark does not claim full stability approval
+AISC 341,2022,AISC341-seismic-detailing,seismic detailing,special seismic ductility details are satisfied,system type/connection/detailing inputs,not implemented,seismic_detailing_residual,dimensionless,1e-9,out_of_scope,not applicable,No seismic detailing claim is made
+AISC 358,2022,AISC358-connection,prequalified moment connection,connection is prequalified for selected seismic system,connection geometry/plates/bolts/welds,not implemented,connection_qualification_residual,dimensionless,1e-9,out_of_scope,not applicable,No connection-prequalification claim is made
+
+
+
