@@ -29,14 +29,16 @@ Submission structure note:
 
 Optimization and Engineering fit status as of 2026-06-01:
 - Scope alignment strengthened around discrete optimization, black-box and optimizer-agnostic workflows, optimization software, benchmarking, and structural design case studies.
-- Main manuscript DOCX verified with Word COM: 6547 words, 39 pages, 2 tables.
-- Main manuscript PDF exported from the current DOCX after the Online Resource and AI-declaration corrections.
-- Supplementary PDF exported from the current supplementary DOCX and named as Online Resource 1.
-- Supplementary source DOCX verified with Word COM before PDF export: 1896 words, 19 pages, 4 tables.
+- Main manuscript DOCX verified with Word COM after repagination: 6519 words, 39 pages, 2 tables.
+- Main manuscript PDF exported from the current DOCX after the Online Resource and AI-declaration corrections; PDF page count verified with pypdf: 25 pages.
+- Supplementary PDF generated from the current supplementary DOCX text and named as Online Resource 1.
+- Supplementary source DOCX verified with Word COM before PDF generation: 1894 words, 19 pages, 4 tables.
 - Cover letter verified with Word COM: 371 words, 3 pages, 0 tables.
 - Reproducibility ZIP verified: 104 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and protocol-row response-support demonstration files; excludes AISC spreadsheet, excludes the large raw Zenodo workbook, excludes vendored solver binaries, excludes pyc/cache files, excludes legacy full-code validator filenames, excludes prior-target metadata strings, excludes legacy response-overclaim labels, excludes legacy response-support overclaim labels, excludes supplementary DOCX upload copies, and excludes the old misleading raw-data protocol filename, SHA256 50878C4893145828304A86A64639250D60FAE79BA7AA77692B4D07DAD83A52EB, size 0.279 MB.
 - Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, optimization-software benchmarking, and reproducibility-package software-package integrity checks.
 - The package does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
+
+
 
 
 
