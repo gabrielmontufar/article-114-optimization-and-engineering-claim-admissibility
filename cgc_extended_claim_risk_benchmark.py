@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 from pathlib import Path
@@ -19,7 +19,7 @@ def to_float(value: str, default: float = 0.0) -> float:
 def extended_label(row: dict[str, str]) -> str:
     residual = to_float(row.get("max_normalized_residual", "0"))
     encoded = row.get("encoded_feasible", "").lower() in {"yes", "true"}
-    full_code = row.get("full_code_validation_status", "not_performed")
+    full_code = row.get("clause_support_status", "not_performed")
     physical = row.get("response_support_status", "not_performed")
     certificate = any(
         key in row.get("solver_or_method", "").lower()
@@ -54,7 +54,7 @@ def main() -> None:
             "case": row["case"],
             "encoded_feasible": row["encoded_feasible"],
             "max_normalized_residual": row["max_normalized_residual"],
-            "full_code_validation_status": row.get("full_code_validation_status", "not_performed"),
+            "clause_support_status": row.get("clause_support_status", "not_performed"),
             "response_support_status": row.get("response_support_status", "not_performed"),
             "code_clause_coverage_percent": row.get("code_clause_coverage_percent", "0"),
             "oracle_comparison_count": row.get("oracle_comparison_count", "0"),

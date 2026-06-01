@@ -12,7 +12,6 @@ BASE = Path(__file__).resolve().parent
 RAW_XLSX_CANDIDATES = [
     Path(os.environ["CGC_TRUSS_RAW_XLSX"]) if os.environ.get("CGC_TRUSS_RAW_XLSX") else None,
     BASE / "external_raw_datasets" / "Zenodo_15658671_SteelTruss" / "LatentMechanisms_SteelTruss_ExperimentalData.xlsx",
-    Path(r"G:\Mi unidad\Codex_article_114_response_support_raw\Zenodo_15658671_SteelTruss\LatentMechanisms_SteelTruss_ExperimentalData.xlsx"),
     BASE.parent
     / "raw_external_validation_data_not_for_zip"
     / "Zenodo_15658671_SteelTruss"

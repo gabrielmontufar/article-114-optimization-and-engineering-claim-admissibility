@@ -1,13 +1,11 @@
 ﻿from pathlib import Path
 import csv
 from itertools import product
-import sys
 import time
 
 import numpy as np
 
 BASE = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE / "vendor_pulp"))
 
 import pulp
 

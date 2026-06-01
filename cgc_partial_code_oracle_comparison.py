@@ -1,13 +1,13 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 from pathlib import Path
 
 
 BASE = Path(__file__).resolve().parent
-IN_CSV = BASE / "cgc_full_code_validation_examples.csv"
-OUT_CSV = BASE / "cgc_full_code_validation_oracle_results.csv"
-OUT_LOG = BASE / "cgc_full_code_validation_discrepancy_log.txt"
+IN_CSV = BASE / "cgc_partial_code_oracle_examples.csv"
+OUT_CSV = BASE / "cgc_partial_code_oracle_results.csv"
+OUT_LOG = BASE / "cgc_partial_code_oracle_discrepancy_log.txt"
 
 
 def to_float(value: str) -> float:

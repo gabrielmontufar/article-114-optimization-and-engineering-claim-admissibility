@@ -4,8 +4,8 @@ cgc_penalty_weight_sweep.py,0,executed by run_all before interruption
 cgc_portal_frame_code_benchmark.py,0,executed by run_all before interruption
 cgc_negative_control_claim_test.py,0,executed by run_all before interruption
 cgc_manual_oracle_check.py,0,executed by run_all before interruption
-cgc_full_code_validation_oracle_comparison.py,0,executed by run_all before interruption
-cgc_portal_frame_full_code_validation.py,0,executed by run_all before interruption
+cgc_partial_code_oracle_comparison.py,0,executed by run_all before interruption
+cgc_portal_frame_clause_support_gate.py,0,executed by run_all before interruption
 cgc_response_support_metrics.py,0,executed by run_all before interruption
 cgc_ten_bar_truss_exhaustive_grouped.py,0,executed by run_all before interruption
 cgc_validation_strength_suite.py,0,executed individually after interruption

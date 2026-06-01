@@ -1,4 +1,0 @@
-﻿benchmark,code_standard_family,clause_register_count,encoded_or_simplified_clause_count,protocol_defined_clause_count,out_of_scope_clause_count,code_clause_coverage_percent,oracle_comparison_count,classification_mismatch_count,full_code_validation_status,supported_claim_level
-portal_frame_full_code_escalation,ASCE 7-22 / AISC 360-22 / AISC 341-22 / AISC 358,8,2,3,3,25.00,6,0,validated_against_partial_code_oracle,conditional partial code-check support for declared simplified checks
-
-

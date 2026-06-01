@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 from pathlib import Path
@@ -45,9 +45,9 @@ def main() -> None:
     rows: list[dict[str, str]] = []
     runtimes = read_runtime_log()
     full_code_summary = {}
-    full_code_path = BASE / "cgc_portal_frame_full_code_validation.csv"
+    full_code_path = BASE / "cgc_portal_frame_clause_support_gate.csv"
     if full_code_path.exists():
-        full_code_rows = read_csv("cgc_portal_frame_full_code_validation.csv")
+        full_code_rows = read_csv("cgc_portal_frame_clause_support_gate.csv")
         if full_code_rows:
             full_code_summary = full_code_rows[0]
     physical_summary = {}
@@ -104,7 +104,7 @@ def main() -> None:
                 "runtime_scope": "wall-clock run of cgc_scalar_benchmark.py",
                 "code_standard_family": "not_applicable",
                 "code_clause_coverage_percent": "0",
-                "full_code_validation_status": "not_applicable",
+                "clause_support_status": "not_applicable",
                 "response_support_status": "not_applicable",
                 "oracle_comparison_count": "0",
                 "classification_mismatch_count": "0",
@@ -138,7 +138,7 @@ def main() -> None:
                 "runtime_scope": "wall-clock run of cgc_ten_bar_truss_exhaustive_grouped.py",
                 "code_standard_family": "not_applicable",
                 "code_clause_coverage_percent": "0",
-                "full_code_validation_status": "not_applicable",
+                "clause_support_status": "not_applicable",
                 "response_support_status": truss_physical_summary.get("response_support_status", "not_applicable"),
                 "oracle_comparison_count": "0",
                 "classification_mismatch_count": "0",
@@ -178,7 +178,7 @@ def main() -> None:
                 "runtime_scope": "wall-clock run of cgc_portal_frame_code_benchmark.py",
                 "code_standard_family": "ASCE 7-22 / AISC 360-22 simplified checks",
                 "code_clause_coverage_percent": full_code_summary.get("code_clause_coverage_percent", "0"),
-                "full_code_validation_status": full_code_summary.get("full_code_validation_status", "protocol_defined"),
+                "clause_support_status": full_code_summary.get("clause_support_status", "protocol_defined"),
                 "response_support_status": portal_physical_summary.get(
                     "response_support_status",
                     physical_summary.get("response_support_status", "protocol_defined"),
@@ -212,7 +212,7 @@ def main() -> None:
                 "runtime_scope": "script reads local AISC v16 spreadsheet and evaluates all column-beam W-shape pairs",
                 "code_standard_family": "AISC W-shape catalog audit",
                 "code_clause_coverage_percent": full_code_summary.get("code_clause_coverage_percent", "0"),
-                "full_code_validation_status": full_code_summary.get("full_code_validation_status", "protocol_defined"),
+                "clause_support_status": full_code_summary.get("clause_support_status", "protocol_defined"),
                 "response_support_status": portal_physical_summary.get(
                     "response_support_status",
                     physical_summary.get("response_support_status", "protocol_defined"),
@@ -246,7 +246,7 @@ def main() -> None:
             "runtime_scope": "external FEM agreement check, not optimization runtime",
             "code_standard_family": "not_applicable",
             "code_clause_coverage_percent": "0",
-            "full_code_validation_status": "not_applicable",
+            "clause_support_status": "not_applicable",
             "response_support_status": "not_applicable",
             "oracle_comparison_count": "0",
             "classification_mismatch_count": str(len(mismatches)),
@@ -271,7 +271,7 @@ def main() -> None:
                 "runtime_scope": "Monte Carlo perturbation probe of load and elastic modulus",
                 "code_standard_family": "not_applicable",
                 "code_clause_coverage_percent": "0",
-                "full_code_validation_status": "not_applicable",
+                "clause_support_status": "not_applicable",
                 "response_support_status": "not_applicable",
                 "oracle_comparison_count": "0",
                 "classification_mismatch_count": "0",
@@ -305,7 +305,7 @@ def main() -> None:
                 "runtime_scope": "MILP solve time after candidate feasible-set construction",
                 "code_standard_family": "not_applicable",
                 "code_clause_coverage_percent": "0",
-                "full_code_validation_status": "not_applicable",
+                "clause_support_status": "not_applicable",
                 "response_support_status": "not_applicable",
                 "oracle_comparison_count": "0",
                 "classification_mismatch_count": "0",

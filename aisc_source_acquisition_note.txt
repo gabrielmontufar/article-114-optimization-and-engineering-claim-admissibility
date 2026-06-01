@@ -7,7 +7,7 @@ https://www.aisc.org/aisc/publications/steel-construction-manual/aisc-shapes-dat
 Local filename used during verification:
 aisc-shapes-database-v160-2.xlsx
 
-The spreadsheet is not redistributed in the clean supplementary ZIP. To reproduce the AISC catalog audit, download the spreadsheet from the official AISC page, place it in the supplementary_files directory with the filename above, and run:
+The spreadsheet is not redistributed in the clean supplementary ZIP. To reproduce the AISC catalog audit, download the spreadsheet from the official AISC page, place it in the same folder as the scripts with the filename above, and run:
 
 python cgc_aisc_portal_frame_catalog_benchmark.py
 

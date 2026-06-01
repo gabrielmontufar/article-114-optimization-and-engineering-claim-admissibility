@@ -1,6 +1,4 @@
-﻿Portal-frame full-code escalation audit.
+Portal-frame clause-support gate audit.
 The clause register maps ASCE/AISC code families to encoded, simplified, protocol-defined, or out-of-scope status.
 The current implementation provides partial code-oracle agreement for declared simplified checks only.
 It does not constitute full ASCE/AISC code approval, professional certification, connection design approval, or seismic detailing approval.
-
-

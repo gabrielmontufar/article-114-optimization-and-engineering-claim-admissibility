@@ -1,4 +1,4 @@
-﻿# Supplementary Reproducibility Package
+# Supplementary Reproducibility Package
 
 This folder contains the scripts and outputs used for the residual-evidence claim-assurance benchmarks.
 
@@ -53,7 +53,7 @@ Core benchmarks do not require the AISC spreadsheet. They include the scalar ben
 
 This core rebuild is not a single monolithic reconstruction from every possible raw third-party dataset. It reruns the redistributable and processed-data scripts available in the package. Optional modules that require nonredistributed external files are handled separately below.
 
-The files `cgc_full_code_clause_register.csv`, `cgc_full_code_validation_oracle_comparison.py`, and `cgc_portal_frame_full_code_validation.py` implement a validation-escalation layer. The current evidence is a partial oracle comparison for declared simplified checks and a protocol-defined pathway for unimplemented clauses. It is not full ASCE/AISC approval.
+The files `cgc_full_code_clause_register.csv`, `cgc_partial_code_oracle_comparison.py`, and `cgc_portal_frame_clause_support_gate.py` implement a validation-escalation layer. The current evidence is a partial oracle comparison for declared simplified checks and a protocol-defined pathway for unimplemented clauses. It is not full ASCE/AISC approval.
 
 The file `cgc_aisc_claim_gate.py` is a claim gate that combines the clause register, partial code-oracle results, portal-frame code-escalation status, and AISC W-shape catalog audit. It authorizes only AISC W-shape catalog-audit wording with partial code-oracle support and blocks full AISC/ASCE approval or professional-certification wording.
 
@@ -79,9 +79,9 @@ The files `cgc_software_package_integrity.py`, `cgc_software_package_integrity_d
 
 The older files `cgc_response_support_protocol.md`, `cgc_response_support_raw_data.csv`, and `cgc_response_support_metrics.py` remain as a historical protocol/gating demonstration for future external-response datasets. The published-response module above is the active response-support layer used by the reporting summary.
 
-The file `cgc_certificate_handoff_schema.json` is not a validation result. It is a reproducible data schema showing how the encoded-claim certificate can be handed off to later nonlinear virtual testing, commercial full-code checking, or laboratory-response planning without implying that those downstream validations have already been performed.
+The file `cgc_certificate_handoff_schema.json` is not a validation result. It is a reproducible data schema showing how the encoded-claim certificate can be handed off to later nonlinear virtual testing, commercial clause-complete checking, or laboratory-response planning without implying that those downstream validations have already been performed.
 
-The `vendor_pulp/` directory is included only to keep the PuLP/CBC finite-set cross-check reproducible when PuLP is not installed. Upstream license files are retained in `vendor_pulp/pulp-3.3.1.dist-info/licenses/LICENSE` and the CBC `coin-license.txt` files; see `vendor_pulp_license_note.txt`.
+The package does not vendor solver binaries. Install PuLP/CBC through `requirements.txt` before running the finite-set cross-check scripts.
 
 The files `cgc_claim_status_by_evidence_layer.csv`, `cgc_negative_control_claim_test.py`, `cgc_negative_control_claim_test.csv`, `cgc_manual_oracle_check.py`, `cgc_manual_oracle_check.csv`, `cgc_manual_oracle_check_results.csv`, `cgc_reviewer_claim_audit_checklist.md`, and `cgc_code_physics_validation_extension.md` provide the reviewer-facing claim-control layer. The negative-control file deliberately includes unsupported wording examples and verifies that they are blocked or downgraded; the manual oracle file checks 18 hand-calculation cases with zero classification mismatches.
 

@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 import hashlib
@@ -25,7 +25,7 @@ REQUIRED_APPLICATION_SCRIPTS = [
     "cgc_truss_response_support.py",
     "cgc_response_support_threshold_sensitivity.py",
     "cgc_aisc_source_traceability.py",
-    "cgc_portal_frame_full_code_validation.py",
+    "cgc_portal_frame_clause_support_gate.py",
 ]
 
 REQUIRED_PRESENTATION_ARTIFACTS = [
@@ -41,7 +41,7 @@ CSV_REQUIREMENTS = {
         "benchmark",
         "case",
         "response_support_status",
-        "full_code_validation_status",
+        "clause_support_status",
         "supported_claim_level",
         "false_certified_count",
     ],
@@ -56,7 +56,7 @@ CSV_REQUIREMENTS = {
         "false_certified_count",
     ],
     "cgc_aisc_claim_gate_summary.csv": [
-        "full_code_validation_status",
+        "clause_support_status",
         "claim_gate_passed",
         "allowed_claim",
         "blocked_claim",
@@ -65,7 +65,7 @@ CSV_REQUIREMENTS = {
         "benchmark",
         "case",
         "response_support_status",
-        "full_code_validation_status",
+        "clause_support_status",
         "supported_claim_level",
     ],
 }
@@ -80,18 +80,28 @@ REQUIRED_DATA_ARTIFACTS = [
     "cgc_truss_raw_data_manifest.csv",
     "cgc_truss_raw_data_acquisition_note.md",
     "third_party_raw_data_redistribution_note.md",
-    "vendor_pulp_license_note.txt",
     "cgc_portal_frame_response_support_plot.png",
     "cgc_truss_response_support_plot.png",
     "cgc_response_support_threshold_sensitivity.csv",
     "cgc_aisc_source_traceability.csv",
 ]
 
-FORBIDDEN_ZIP_SUFFIXES = {".pyc"}
+FORBIDDEN_ZIP_SUFFIXES = {".pyc", ".exe"}
 FORBIDDEN_ZIP_NAMES = {
     "__pycache__",
+    "vendor_pulp",
     "aisc-shapes-database-v160-2.xlsx",
+    "LatentMechanisms_SteelTruss_ExperimentalData.xlsx",
 }
+FORBIDDEN_TEXT_PATTERNS = [
+    "C:\\Users\\gjm31",
+    "G:\\Mi unidad",
+    "Codex_article_114",
+    "cgc_full_code_validation",
+    "cgc_portal_frame_full_code_validation",
+    "An Optimizer-Agnostic Certification Layer",
+    "Engineering Optimization outputs",
+]
 
 SOFTWARE_FIELDS = [
     "software_package_integrity_status",
@@ -171,6 +181,28 @@ def check_data(rows: list[dict[str, str]]) -> tuple[int, int]:
     return schema_errors, missing
 
 
+def check_public_text(rows: list[dict[str, str]]) -> int:
+    errors = 0
+    extensions = {".py", ".csv", ".txt", ".md", ".json", ".yml", ".yaml"}
+    for path in sorted(BASE.rglob("*")):
+        if not path.is_file() or path.suffix.lower() not in extensions:
+            continue
+        if path.name == "cgc_software_package_integrity.py":
+            continue
+        if path.name == OUT_DETAILS.name:
+            continue
+        if any(part in {"__pycache__", ".git", "vendor_pulp"} for part in path.parts):
+            continue
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        hits = [pattern for pattern in FORBIDDEN_TEXT_PATTERNS if pattern in text]
+        if hits:
+            errors += len(hits)
+            add(rows, "data", f"text_hygiene:{path.relative_to(BASE)}", "fail", "forbidden text: " + "; ".join(hits))
+    if errors == 0:
+        add(rows, "data", "text_hygiene", "pass", "no local paths, prior-title strings, or legacy script names")
+    return errors
+
+
 def package_context_available() -> bool:
     return any(path.exists() for path in REQUIRED_PRESENTATION_ARTIFACTS)
 
@@ -181,7 +213,7 @@ def check_zip(rows: list[dict[str, str]]) -> tuple[int, str]:
     if not zip_path.exists():
         add(rows, "presentation", "zip_exists", "skip", "upload ZIP not present in supplement-only extraction")
         return missing, "not_applicable"
-    add(rows, "presentation", "zip_path_checked", "pass", str(zip_path))
+    add(rows, "presentation", "zip_path_checked", "pass", "submission supplementary ZIP present")
     try:
         with ZipFile(zip_path) as z:
             names = z.namelist()
@@ -209,10 +241,10 @@ def check_presentation(rows: list[dict[str, str]]) -> tuple[int, str]:
     if package_context_available():
         for path in REQUIRED_PRESENTATION_ARTIFACTS:
             if path.exists():
-                add(rows, "presentation", f"artifact_exists:{path.name}", "pass", str(path))
+                add(rows, "presentation", f"artifact_exists:{path.name}", "pass", "submission artifact present")
             else:
                 missing += 1
-                add(rows, "presentation", f"artifact_exists:{path.name}", "fail", str(path))
+                add(rows, "presentation", f"artifact_exists:{path.name}", "fail", "submission artifact missing")
     else:
         add(rows, "presentation", "submission_artifacts", "skip", "supplement-only extraction context")
     zip_missing, hash_match = check_zip(rows)
@@ -249,6 +281,7 @@ def main() -> None:
     syntax_errors = check_syntax(rows)
     missing_application = check_application(rows)
     data_schema_errors, missing_data = check_data(rows)
+    data_schema_errors += check_public_text(rows)
     missing_presentation, upload_hash_match = check_presentation(rows)
     missing_artifacts = missing_application + missing_data + missing_presentation
     status = "passed" if syntax_errors == 0 and data_schema_errors == 0 and missing_artifacts == 0 else "failed"

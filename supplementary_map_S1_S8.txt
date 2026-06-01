@@ -1,7 +1,7 @@
 ﻿Supplementary material map S1-S8
 
 S1. Mathematical formulation and constraint catalog
-Location: Supplementary Material - An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs.docx
+Location: Supplementary_Material.docx
 
 S2. Benchmark definitions and extended tables
 Location: Supplementary Material DOCX plus scripts/outputs:
@@ -34,7 +34,7 @@ cgc_aisc_portal_frame_catalog_benchmark_note.txt
 aisc_source_acquisition_note.txt
 
 S6. Certificate propositions and scope limits
-Location: Supplementary Material - An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs.docx
+Location: Supplementary_Material.docx
 
 S7. Monte Carlo robustness boundary probe
 Location:
@@ -44,8 +44,7 @@ cgc_uncertainty_robustness_probe_note.txt
 
 S8. Alignment with original-research reporting guides
 Location:
-Supplementary Material - An Optimizer-Agnostic Certification Layer for Engineering Design Optimization Outputs.docx
-auditoria_guias_articulo_investigacion_original_20260520.md
+Supplementary_Material.docx
 
 
 

@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 from pathlib import Path
@@ -6,9 +6,9 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
 CLAUSE_REGISTER = BASE / "cgc_full_code_clause_register.csv"
-ORACLE_RESULTS = BASE / "cgc_full_code_validation_oracle_results.csv"
-OUT_CSV = BASE / "cgc_portal_frame_full_code_validation.csv"
-OUT_NOTE = BASE / "cgc_portal_frame_full_code_validation_note.txt"
+ORACLE_RESULTS = BASE / "cgc_partial_code_oracle_results.csv"
+OUT_CSV = BASE / "cgc_portal_frame_clause_support_gate.csv"
+OUT_NOTE = BASE / "cgc_portal_frame_clause_support_gate_note.txt"
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -44,7 +44,7 @@ def main() -> None:
         "code_clause_coverage_percent": f"{coverage:.2f}",
         "oracle_comparison_count": len(oracle),
         "classification_mismatch_count": len(mismatches),
-        "full_code_validation_status": status,
+        "clause_support_status": status,
         "supported_claim_level": supported_claim,
     }
     with OUT_CSV.open("w", newline="", encoding="utf-8") as f:
@@ -54,7 +54,7 @@ def main() -> None:
     OUT_NOTE.write_text(
         "\n".join(
             [
-                "Portal-frame full-code escalation audit.",
+                "Portal-frame clause-support gate audit.",
                 "The clause register maps ASCE/AISC code families to encoded, simplified, protocol-defined, or out-of-scope status.",
                 "The current implementation provides partial code-oracle agreement for declared simplified checks only.",
                 "It does not constitute full ASCE/AISC code approval, professional certification, connection design approval, or seismic detailing approval.",

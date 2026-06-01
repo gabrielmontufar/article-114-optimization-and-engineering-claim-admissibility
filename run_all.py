@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import subprocess
@@ -15,8 +15,8 @@ CORE_SCRIPTS = [
     "cgc_portal_frame_code_benchmark.py",
     "cgc_negative_control_claim_test.py",
     "cgc_manual_oracle_check.py",
-    "cgc_full_code_validation_oracle_comparison.py",
-    "cgc_portal_frame_full_code_validation.py",
+    "cgc_partial_code_oracle_comparison.py",
+    "cgc_portal_frame_clause_support_gate.py",
     "cgc_response_support_metrics.py",
     "cgc_portal_frame_response_support.py",
     "cgc_truss_response_support.py",

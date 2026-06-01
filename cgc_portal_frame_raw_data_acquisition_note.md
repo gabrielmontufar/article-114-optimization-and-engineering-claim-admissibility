@@ -5,13 +5,12 @@ come from the public DesignSafe/NEES project `NEES-2005-0101`, SAC Steel
 Project Phase 2, Experiment 5. The downloaded files are the converted
 `sac2rc01.txt` through `sac2rc10.txt` response curves.
 
-The raw files were saved outside the submission ZIP because they are third-party
+The raw files are not bundled in the submission ZIP because they are third-party
 public data and the redistribution license for this legacy NEES/DesignSafe
-record was not confirmed as an open redistribution license:
-
-```text
-G:\Mi unidad\Codex_article_114_response_support_raw\NEES-2005-0101_Experiment-5_SAC
-```
+record was not confirmed as an open redistribution license. For optional raw
+reruns, place `sac2rc01.txt` through `sac2rc10.txt` in
+`external_raw_datasets/DesignSafe_NEES_2005_0101_Experiment5_SAC/` or set the
+`CGC_PHYSICAL_RAW_DIR` environment variable to the folder containing those files.
 
 To reproduce the acquisition, list and preview public DesignSafe files with:
 

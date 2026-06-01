@@ -5,14 +5,14 @@ application,syntax:cgc_aisc_source_traceability.py,pass,py_compile succeeded
 application,syntax:cgc_benchmark_reporting_summary.py,pass,py_compile succeeded
 application,syntax:cgc_claim_risk_benchmark.py,pass,py_compile succeeded
 application,syntax:cgc_extended_claim_risk_benchmark.py,pass,py_compile succeeded
-application,syntax:cgc_full_code_validation_oracle_comparison.py,pass,py_compile succeeded
 application,syntax:cgc_manual_oracle_check.py,pass,py_compile succeeded
 application,syntax:cgc_milp_crosscheck_pulp.py,pass,py_compile succeeded
 application,syntax:cgc_negative_control_claim_test.py,pass,py_compile succeeded
 application,syntax:cgc_opensees_blind_crosscheck.py,pass,py_compile succeeded
+application,syntax:cgc_partial_code_oracle_comparison.py,pass,py_compile succeeded
 application,syntax:cgc_penalty_weight_sweep.py,pass,py_compile succeeded
+application,syntax:cgc_portal_frame_clause_support_gate.py,pass,py_compile succeeded
 application,syntax:cgc_portal_frame_code_benchmark.py,pass,py_compile succeeded
-application,syntax:cgc_portal_frame_full_code_validation.py,pass,py_compile succeeded
 application,syntax:cgc_portal_frame_response_support.py,pass,py_compile succeeded
 application,syntax:cgc_response_support_metrics.py,pass,py_compile succeeded
 application,syntax:cgc_response_support_threshold_sensitivity.py,pass,py_compile succeeded
@@ -33,7 +33,7 @@ application,script_exists:cgc_portal_frame_response_support.py,pass,script prese
 application,script_exists:cgc_truss_response_support.py,pass,script present
 application,script_exists:cgc_response_support_threshold_sensitivity.py,pass,script present
 application,script_exists:cgc_aisc_source_traceability.py,pass,script present
-application,script_exists:cgc_portal_frame_full_code_validation.py,pass,script present
+application,script_exists:cgc_portal_frame_clause_support_gate.py,pass,script present
 data,schema:cgc_benchmark_reporting_summary.csv,pass,required columns present
 data,schema:cgc_portal_frame_response_support_summary.csv,pass,required columns present
 data,schema:cgc_truss_response_support_summary.csv,pass,required columns present
@@ -48,16 +48,16 @@ data,artifact_exists:cgc_truss_experimental_response.csv,pass,artifact present
 data,artifact_exists:cgc_truss_raw_data_manifest.csv,pass,artifact present
 data,artifact_exists:cgc_truss_raw_data_acquisition_note.md,pass,artifact present
 data,artifact_exists:third_party_raw_data_redistribution_note.md,pass,artifact present
-data,artifact_exists:vendor_pulp_license_note.txt,pass,artifact present
 data,artifact_exists:cgc_portal_frame_response_support_plot.png,pass,artifact present
 data,artifact_exists:cgc_truss_response_support_plot.png,pass,artifact present
 data,artifact_exists:cgc_response_support_threshold_sensitivity.csv,pass,artifact present
 data,artifact_exists:cgc_aisc_source_traceability.csv,pass,artifact present
-presentation,artifact_exists:An Optimizer Agnostic.docx,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\01 Manuscript\An Optimizer Agnostic.docx
-presentation,artifact_exists:An Optimizer Agnostic.pdf,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\01 Manuscript\An Optimizer Agnostic.pdf
-presentation,artifact_exists:Supplementary_Material.docx,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\02 Supplementary material\Supplementary_Material.docx
-presentation,artifact_exists:supplementary material.zip,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\02 Supplementary material\supplementary material.zip
-presentation,artifact_exists:00 Files for Optimization and Engineering upload,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload
-presentation,zip_path_checked,pass,C:\Users\gjm31\OneDrive\Escritorio\articulos up\114 avo art\reorientado_Engineering_Optimization_20260520\00 Files for Optimization and Engineering upload\02 Supplementary material\supplementary material.zip
+data,text_hygiene,pass,"no local paths, prior-title strings, or legacy script names"
+presentation,artifact_exists:An Optimizer Agnostic.docx,pass,submission artifact present
+presentation,artifact_exists:An Optimizer Agnostic.pdf,pass,submission artifact present
+presentation,artifact_exists:Supplementary_Material.docx,pass,submission artifact present
+presentation,artifact_exists:supplementary material.zip,pass,submission artifact present
+presentation,artifact_exists:00 Files for Optimization and Engineering upload,pass,submission artifact present
+presentation,zip_path_checked,pass,submission supplementary ZIP present
 presentation,zip_forbidden_files,pass,no restricted raw/cache files in ZIP
 presentation,upload_zip_hash_match,skip,final ZIP SHA256 is recorded in the delivery manifest to avoid self-hash recursion

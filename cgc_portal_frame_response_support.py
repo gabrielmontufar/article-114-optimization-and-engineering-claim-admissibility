@@ -13,7 +13,6 @@ BASE = Path(__file__).resolve().parent
 RAW_DIR_CANDIDATES = [
     Path(os.environ["CGC_PHYSICAL_RAW_DIR"]) if os.environ.get("CGC_PHYSICAL_RAW_DIR") else None,
     BASE / "external_raw_datasets" / "DesignSafe_NEES_2005_0101_Experiment5_SAC",
-    Path(r"G:\Mi unidad\Codex_article_114_response_support_raw\NEES-2005-0101_Experiment-5_SAC"),
     BASE.parent / "raw_external_validation_data_not_for_zip" / "NEES-2005-0101_Experiment-5_SAC",
 ]
 

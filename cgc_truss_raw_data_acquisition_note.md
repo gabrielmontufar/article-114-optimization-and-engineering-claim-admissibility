@@ -6,15 +6,15 @@ after critical failures - Experimental dataset". The dataset contains sensor
 records from displacement transducers and strain gauges collected during
 component-removal tests on a scaled steel truss bridge specimen.
 
-The raw workbook is redistributed in the clean supplementary ZIP because the
-Zenodo record declares a Creative Commons Attribution 4.0 International license.
-It is also retained in the local raw-data folder:
+The raw workbook is not bundled in the submission ZIP. Reviewers who want to
+rerun the optional raw-data reconstruction should obtain it directly from the
+public Zenodo record and preserve attribution under the Creative Commons
+Attribution 4.0 International license. For optional raw reruns, place
+`LatentMechanisms_SteelTruss_ExperimentalData.xlsx` in
+`external_raw_datasets/Zenodo_15658671_SteelTruss/` or set the
+`CGC_TRUSS_RAW_XLSX` environment variable to the workbook path.
 
-```text
-G:\Mi unidad\Codex_article_114_response_support_raw\Zenodo_15658671_SteelTruss\LatentMechanisms_SteelTruss_ExperimentalData.xlsx
-```
-
-The submission package includes the raw workbook, compact processed response scores in
+The submission package includes compact processed response scores in
 `cgc_truss_experimental_response.csv`, the raw-data manifest in
 `cgc_truss_raw_data_manifest.csv`, the validation script, the validation details,
 and the validation summary. The evidence supports published truss-family

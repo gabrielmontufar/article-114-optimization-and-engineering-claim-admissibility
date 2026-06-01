@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 from pathlib import Path
@@ -101,7 +101,7 @@ def claim_risk(row: dict[str, str]) -> dict[str, str]:
         "solver_or_method": row["solver_or_method"],
         "runtime_scope": row["runtime_scope"],
         "response_support_status": row.get("response_support_status", "not_performed"),
-        "full_code_validation_status": row.get("full_code_validation_status", "not_performed"),
+        "clause_support_status": row.get("clause_support_status", "not_performed"),
         "supported_claim_level": row.get("supported_claim_level", "encoded-only"),
         "claim_risk_score": f"{score:.6f}",
         "claim_risk_label": label,

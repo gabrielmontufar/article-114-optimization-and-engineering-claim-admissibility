@@ -1,4 +1,4 @@
-benchmark,case,encoded_feasible,max_normalized_residual,full_code_validation_status,response_support_status,code_clause_coverage_percent,oracle_comparison_count,classification_mismatch_count,false_certified_count,supported_claim_level
+benchmark,case,encoded_feasible,max_normalized_residual,clause_support_status,response_support_status,code_clause_coverage_percent,oracle_comparison_count,classification_mismatch_count,false_certified_count,supported_claim_level
 scalar_catalog,soft penalty,no,0.75,not_applicable,not_applicable,0,0,0,0,high
 scalar_catalog,continuous hard constraints,no,1.0,not_applicable,not_applicable,0,0,0,0,high
 scalar_catalog,discrete catalog hard-constraint enumeration,yes,0.0,not_applicable,not_applicable,0,0,0,0,low_encoded_only

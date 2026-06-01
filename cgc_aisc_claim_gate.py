@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import csv
 from pathlib import Path
@@ -6,8 +6,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
 CLAUSE_REGISTER = BASE / "cgc_full_code_clause_register.csv"
-ORACLE_RESULTS = BASE / "cgc_full_code_validation_oracle_results.csv"
-PORTAL_FULL_CODE = BASE / "cgc_portal_frame_full_code_validation.csv"
+ORACLE_RESULTS = BASE / "cgc_partial_code_oracle_results.csv"
+PORTAL_FULL_CODE = BASE / "cgc_portal_frame_clause_support_gate.csv"
 AISC_CATALOG = BASE / "cgc_aisc_portal_frame_catalog_benchmark.csv"
 OUT_CSV = BASE / "cgc_aisc_claim_gate_summary.csv"
 OUT_NOTE = BASE / "cgc_aisc_claim_gate_note.txt"
@@ -30,7 +30,7 @@ def main() -> None:
 
     aisc_feasible = int(float(aisc["feasible_count"]))
     aisc_candidates = int(float(aisc["candidate_count"]))
-    full_code_status = portal["full_code_validation_status"]
+    full_code_status = portal["clause_support_status"]
 
     row = {
         "gate": "aisc_catalog_claim_gate",
@@ -41,7 +41,7 @@ def main() -> None:
         "oracle_classification_mismatch_count": str(len(oracle_mismatches)),
         "aisc_catalog_candidate_count": str(aisc_candidates),
         "aisc_catalog_feasible_count": str(aisc_feasible),
-        "full_code_validation_status": full_code_status,
+        "clause_support_status": full_code_status,
         "aisc_catalog_status": "external_catalog_audit_available",
         "allowed_claim": "AISC W-shape catalog audit plus partial code-oracle support",
         "blocked_claim": "full AISC/ASCE approval or professional certification",
