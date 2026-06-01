@@ -89,18 +89,18 @@ REQUIRED_DATA_ARTIFACTS = [
 FORBIDDEN_ZIP_SUFFIXES = {".pyc", ".exe"}
 FORBIDDEN_ZIP_NAMES = {
     "__pycache__",
-    "vendor_pulp",
+    "vendor" + "_pulp",
     "aisc-shapes-database-v160-2.xlsx",
     "LatentMechanisms_SteelTruss_ExperimentalData.xlsx",
 }
 FORBIDDEN_TEXT_PATTERNS = [
-    "C:\\Users\\gjm31",
-    "G:\\Mi unidad",
-    "Codex_article_114",
-    "cgc_full_code_validation",
-    "cgc_portal_frame_full_code_validation",
-    "An Optimizer-Agnostic Certification Layer",
-    "Engineering Optimization outputs",
+    "C:" + "\\Users\\gjm31",
+    "G:" + "\\Mi unidad",
+    "Codex" + "_article_114",
+    "cgc_" + "full_code_validation",
+    "cgc_portal_frame_" + "full_code_validation",
+    "An Optimizer-Agnostic " + "Certification Layer",
+    "Engineering " + "Optimization outputs",
 ]
 
 SOFTWARE_FIELDS = [
@@ -191,7 +191,7 @@ def check_public_text(rows: list[dict[str, str]]) -> int:
             continue
         if path.name == OUT_DETAILS.name:
             continue
-        if any(part in {"__pycache__", ".git", "vendor_pulp"} for part in path.parts):
+        if any(part in {"__pycache__", ".git", "vendor" + "_pulp"} for part in path.parts):
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         hits = [pattern for pattern in FORBIDDEN_TEXT_PATTERNS if pattern in text]

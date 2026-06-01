@@ -33,9 +33,10 @@ Optimization and Engineering fit status as of 2026-06-01:
 - Main manuscript PDF exported from the current DOCX on 2026-06-01.
 - Supplementary Word document verified with Word COM: 1892 words, 19 pages, 4 tables.
 - Cover letter verified with Word COM: 374 words, 3 pages, 0 tables.
-- Supplementary ZIP verified: 105 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and Supplementary_Material.docx, excludes AISC spreadsheet, excludes the large raw Zenodo workbook, excludes vendored solver binaries, excludes pyc/cache files, excludes legacy full-code validator filenames, excludes prior-target metadata strings, excludes legacy response-overclaim labels, and excludes legacy response-support overclaim labels, SHA256 C2AFA9EE8E48EADB43DBB72A8264D53E926D986994126A33B7D6281FB9D64493, size 0.308 MB.
+- Supplementary ZIP verified: 105 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and Supplementary_Material.docx, excludes AISC spreadsheet, excludes the large raw Zenodo workbook, excludes vendored solver binaries, excludes pyc/cache files, excludes legacy full-code validator filenames, excludes prior-target metadata strings, excludes legacy response-overclaim labels, and excludes legacy response-support overclaim labels, SHA256 3577B3C57AF8351FD3B4BF6B1044FB1C08C10837BE5F5EC25CE5730E95E265F7, size 0.308 MB.
 - Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, optimization-software benchmarking, and reproducibility-package software-package integrity checks.
 - The package does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
+
 
 
 
