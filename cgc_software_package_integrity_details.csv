@@ -55,8 +55,8 @@ data,artifact_exists:cgc_aisc_source_traceability.csv,pass,artifact present
 data,text_hygiene,pass,"no local paths, prior-title strings, or legacy script names"
 presentation,artifact_exists:An Optimizer Agnostic.docx,pass,submission artifact present
 presentation,artifact_exists:An Optimizer Agnostic.pdf,pass,submission artifact present
-presentation,artifact_exists:Supplementary_Material.docx,pass,submission artifact present
-presentation,artifact_exists:supplementary material.zip,pass,submission artifact present
+presentation,artifact_exists:ESM_1_Supplementary_Material.pdf,pass,submission artifact present
+presentation,artifact_exists:ESM_2_Reproducibility_Package.zip,pass,submission artifact present
 presentation,artifact_exists:00 Files for Optimization and Engineering upload,pass,submission artifact present
 presentation,zip_path_checked,pass,submission supplementary ZIP present
 presentation,zip_forbidden_files,pass,no restricted raw/cache files in ZIP

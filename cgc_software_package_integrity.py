@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import csv
 import hashlib
@@ -31,8 +31,8 @@ REQUIRED_APPLICATION_SCRIPTS = [
 REQUIRED_PRESENTATION_ARTIFACTS = [
     ROOT / "00 Files for Optimization and Engineering upload" / "01 Manuscript" / "An Optimizer Agnostic.docx",
     ROOT / "00 Files for Optimization and Engineering upload" / "01 Manuscript" / "An Optimizer Agnostic.pdf",
-    ROOT / "00 Files for Optimization and Engineering upload" / "02 Supplementary material" / "Supplementary_Material.docx",
-    ROOT / "00 Files for Optimization and Engineering upload" / "02 Supplementary material" / "supplementary material.zip",
+    ROOT / "00 Files for Optimization and Engineering upload" / "02 Supplementary material" / "ESM_1_Supplementary_Material.pdf",
+    ROOT / "00 Files for Optimization and Engineering upload" / "02 Supplementary material" / "ESM_2_Reproducibility_Package.zip",
     ROOT / "00 Files for Optimization and Engineering upload",
 ]
 
@@ -92,6 +92,7 @@ FORBIDDEN_ZIP_NAMES = {
     "vendor" + "_pulp",
     "aisc-shapes-database-v160-2.xlsx",
     "LatentMechanisms_SteelTruss_ExperimentalData.xlsx",
+    "cgc_response_support_" + "raw_data.csv",
 }
 FORBIDDEN_TEXT_PATTERNS = [
     "C:" + "\\Users\\gjm31",
@@ -99,7 +100,7 @@ FORBIDDEN_TEXT_PATTERNS = [
     "Codex" + "_article_114",
     "cgc_" + "full_code_validation",
     "cgc_portal_frame_" + "full_code_validation",
-    "An Optimizer-Agnostic " + "Certification Layer",
+    "An Optimizer-Agnostic " + "Certification " + "Layer",
     "Engineering " + "Optimization outputs",
 ]
 
@@ -209,7 +210,7 @@ def package_context_available() -> bool:
 
 def check_zip(rows: list[dict[str, str]]) -> tuple[int, str]:
     missing = 0
-    zip_path = ROOT / "00 Files for Optimization and Engineering upload" / "02 Supplementary material" / "supplementary material.zip"
+    zip_path = ROOT / "00 Files for Optimization and Engineering upload" / "02 Supplementary material" / "ESM_2_Reproducibility_Package.zip"
     if not zip_path.exists():
         add(rows, "presentation", "zip_exists", "skip", "upload ZIP not present in supplement-only extraction")
         return missing, "not_applicable"
@@ -328,6 +329,8 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
 
 
 

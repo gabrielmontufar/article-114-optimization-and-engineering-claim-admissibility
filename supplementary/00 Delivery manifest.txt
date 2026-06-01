@@ -13,34 +13,30 @@ Note: this is the current Optimization and Engineering upload package. Use this 
 Package contents:
 1. 01 Manuscript/An Optimizer Agnostic.docx
 2. 01 Manuscript/An Optimizer Agnostic.pdf
-3. 02 Supplementary material/Supplementary_Material.docx
-4. 02 Supplementary material/supplementary material.zip
+3. 02 Supplementary material/ESM_1_Supplementary_Material.pdf
+4. 02 Supplementary material/ESM_2_Reproducibility_Package.zip
 5. 03 Cover letter/cover_letter_Optimization_and_Engineering.docx
 
 Public supplementary repository:
 https://github.com/gabrielmontufar/article-114-optimization-and-engineering-claim-admissibility
 
 Submission structure note:
-- The supplementary Word document is intentionally provided as a separate upload file and is also copied inside the ZIP so reviewers who inspect only the archive can access Supplementary Material S1-S8.
-- The ZIP contains the reproducibility package: scripts, processed CSV outputs, plots, manifests, notes, requirements, logs, and the supplementary Word document.
-- The public GitHub repository contains both the supplementary Word document and the clean reproducibility archive.
-- Loose helper scripts and CSVs were removed from the upload folder because they are represented inside the ZIP and could confuse version control during submission.
+- Online Resource 1 is the supplementary PDF containing Supplementary Material S1-S12.
+- Online Resource 2 is the reproducibility ZIP containing scripts, processed CSV outputs, plots, manifests, notes, requirements, logs, and software-package integrity outputs.
+- The supplementary DOCX is retained only as an editable source in the public repository, not as the primary supplementary text file for portal upload.
+- Loose helper scripts and CSVs were removed from the upload folder because they are represented inside Online Resource 2 and could confuse version control during submission.
 - Backups were moved to 99 Internal verification not for upload and must not be uploaded.
 
 Optimization and Engineering fit status as of 2026-06-01:
 - Scope alignment strengthened around discrete optimization, black-box and optimizer-agnostic workflows, optimization software, benchmarking, and structural design case studies.
-- Main manuscript DOCX verified with Word COM: 6529 words, 40 pages, 2 tables.
-- Main manuscript PDF exported from the current DOCX on 2026-06-01.
-- Supplementary Word document verified with Word COM: 1892 words, 19 pages, 4 tables.
-- Cover letter verified with Word COM: 374 words, 3 pages, 0 tables.
-- Supplementary ZIP verified: 105 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and Supplementary_Material.docx, excludes AISC spreadsheet, excludes the large raw Zenodo workbook, excludes vendored solver binaries, excludes pyc/cache files, excludes legacy full-code validator filenames, excludes prior-target metadata strings, excludes legacy response-overclaim labels, and excludes legacy response-support overclaim labels, SHA256 3577B3C57AF8351FD3B4BF6B1044FB1C08C10837BE5F5EC25CE5730E95E265F7, size 0.308 MB.
+- Main manuscript DOCX verified with Word COM: 6547 words, 39 pages, 2 tables.
+- Main manuscript PDF exported from the current DOCX after the Online Resource and AI-declaration corrections.
+- Supplementary PDF exported from the current supplementary DOCX and named as Online Resource 1.
+- Supplementary source DOCX verified with Word COM before PDF export: 1896 words, 19 pages, 4 tables.
+- Cover letter verified with Word COM: 371 words, 3 pages, 0 tables.
+- Reproducibility ZIP verified: 104 entries, includes run_all.py with --quick and --smoke modes, cgc_operator_property_examples.csv, cgc_response_support_threshold_sensitivity.csv, cgc_aisc_source_traceability.csv, cgc_aisc_claim_gate.py, README.md, cgc_software_package_integrity.py, response-support scripts, and protocol-row response-support demonstration files; excludes AISC spreadsheet, excludes the large raw Zenodo workbook, excludes vendored solver binaries, excludes pyc/cache files, excludes legacy full-code validator filenames, excludes prior-target metadata strings, excludes legacy response-overclaim labels, excludes legacy response-support overclaim labels, excludes supplementary DOCX upload copies, and excludes the old misleading raw-data protocol filename, SHA256 50878C4893145828304A86A64639250D60FAE79BA7AA77692B4D07DAD83A52EB, size 0.279 MB.
 - Current evidence supports scope-limited encoded claims, partial code-oracle support, published steel-frame response support, published truss-family response support, optimization-software benchmarking, and reproducibility-package software-package integrity checks.
 - The package does not claim safety certification, professional approval, AISC approval, complete regulatory approval, or unrestricted global MINLP optimality.
-
-
-
-
-
 
 
 

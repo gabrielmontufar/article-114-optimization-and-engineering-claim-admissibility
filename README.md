@@ -1,14 +1,14 @@
-# Supplementary Reproducibility Package
+﻿# Supplementary Reproducibility Package
 
 This folder contains the scripts and outputs used for the residual-evidence claim-assurance benchmarks.
 
 ## Public Repository
 
-The submitted supplementary Word document and the clean reproducibility archive are also available in the public GitHub repository:
+Online Resource 1 and Online Resource 2 are also available in the public GitHub repository:
 
 https://github.com/gabrielmontufar/article-114-optimization-and-engineering-claim-admissibility
 
-The repository is the public access point for the article 114 supplementary material. It includes the supplementary Word document, the submitted ZIP archive, this README, manifests, acquisition notes, processed response-support points, and software/package integrity outputs. Third-party raw datasets are not bundled in the submission ZIP; instructions for obtaining the public or official source files are included for optional raw-data reruns.
+The repository is the public access point for the article 114 supplementary material. It includes Online Resource 1, Online Resource 2, this README, manifests, acquisition notes, processed response-support points, and software/package integrity outputs. Third-party raw datasets are not bundled in the submission ZIP; instructions for obtaining the public or official source files are included for optional raw-data reruns.
 
 ## Environment
 
@@ -77,7 +77,7 @@ The submission ZIP intentionally separates processed evidence from large or thir
 
 The files `cgc_software_package_integrity.py`, `cgc_software_package_integrity_details.csv`, `cgc_software_package_integrity_summary.csv`, and `cgc_software_package_integrity_note.txt` implement software-package integrity checks for the reproducibility package. This layer checks Python syntax, required application scripts, CSV schemas, processed datasets, presentation artifacts, ZIP restrictions, and upload-package hash consistency. It supports software/package integrity only; it is not structural-code approval, legal approval, professional approval, or complete regulatory approval.
 
-The older files `cgc_response_support_protocol.md`, `cgc_response_support_raw_data.csv`, and `cgc_response_support_metrics.py` remain as a historical protocol/gating demonstration for future external-response datasets. The published-response module above is the active response-support layer used by the reporting summary.
+The older files `cgc_response_support_protocol.md`, `cgc_response_support_protocol_rows.csv`, and `cgc_response_support_metrics.py` remain as a historical protocol/gating demonstration for future external-response datasets; the CSV contains protocol rows only, not redistributed third-party raw measurements. The published-response module above is the active response-support layer used by the reporting summary.
 
 The file `cgc_certificate_handoff_schema.json` is not a validation result. It is a reproducible data schema showing how the encoded-claim certificate can be handed off to later nonlinear virtual testing, commercial clause-complete checking, or laboratory-response planning without implying that those downstream validations have already been performed.
 
@@ -102,6 +102,8 @@ The included logs and verification tables document quick/reporting execution, pe
 ## Scope
 
 The scripts certify encoded constraints under declared assumptions. They do not certify full physical safety, complete regulatory approval, robust response support under uncertainty, or unrestricted global MINLP optimality.
+
+
 
 
 

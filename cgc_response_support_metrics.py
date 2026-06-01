@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 BASE = Path(__file__).resolve().parent
-IN_CSV = BASE / "cgc_response_support_raw_data.csv"
+IN_CSV = BASE / "cgc_response_support_protocol_rows.csv"
 OUT_CSV = BASE / "cgc_response_support_summary.csv"
 OUT_NOTE = BASE / "cgc_response_support_note.txt"
 
@@ -60,7 +60,7 @@ def main() -> None:
     OUT_NOTE.write_text(
         "\n".join(
             [
-                "external response support metrics summary.",
+                "external response-support protocol-row summary.",
                 f"Status: {summary['response_support_status']}.",
                 "No published-response claim is allowed unless measured or published response data are supplied and false_certified_count is zero.",
             ]
@@ -74,6 +74,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 
