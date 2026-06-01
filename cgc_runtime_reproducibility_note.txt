@@ -1,7 +1,9 @@
-Hardware used for local verification: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz; Microsoft Windows 11 Home Single Language.
+﻿Hardware used for local verification: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz; Microsoft Windows 11 Home Single Language.
 Measured wall-clock runtimes are local verification measurements, not universal performance claims.
 The PuLP/CBC log reports solver time after feasible candidate sets are constructed; total enumeration wall-clock times are reported separately in cgc_benchmark_reporting_summary.csv.
 The AISC benchmark uses a locally supplied AISC Shapes Database v16.0 spreadsheet; the spreadsheet is not redistributed in the clean ZIP.
 The OpenSeesPy cross-check verifies finite-element classification agreement and is not counted as an optimization runtime.
 The Monte Carlo perturbation probe is a robustness boundary test; it is not used to claim robust response support unless every sampled perturbation remains feasible.
 The reporting summary reads reproducibility runtimes from the included run_all_log.txt when available.
+Modes such as --quick and --smoke overwrite run_all_log.txt for the selected mode; scripts omitted by that mode are reported as not_measured in the refreshed summary.
+

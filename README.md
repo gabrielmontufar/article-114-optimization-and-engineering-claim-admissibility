@@ -33,6 +33,8 @@ To regenerate summary files from the included outputs:
 python run_all.py --quick
 ```
 
+This mode overwrites `run_all_log.txt` with the quick-run scripts only. Runtime fields for scripts not executed in the selected mode are reported as `not_measured` after the log-dependent summary is refreshed.
+
 ## Smoke Rebuild
 
 To run a short reviewer smoke test that checks core logic, claim blocking, manual oracle cases, reporting, and software-package integrity without rerunning the longest enumeration modules:
@@ -40,6 +42,8 @@ To run a short reviewer smoke test that checks core logic, claim blocking, manua
 ```bash
 python run_all.py --smoke
 ```
+
+This mode also overwrites `run_all_log.txt`; omitted long-running scripts remain represented by their included output files but their runtime fields are reported as `not_measured` for that smoke run.
 
 ## Core Rebuild
 
