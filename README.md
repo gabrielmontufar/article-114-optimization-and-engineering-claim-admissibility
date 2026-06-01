@@ -101,7 +101,8 @@ The included logs and verification tables document quick/reporting execution, pe
 
 ## Scope
 
-The scripts certify encoded constraints under declared assumptions. They do not certify full physical safety, complete regulatory approval, robust response support under uncertainty, or unrestricted global MINLP optimality.
+The scripts verify encoded constraints under declared assumptions. They do not certify full physical safety, complete regulatory approval, robust response support under uncertainty, or unrestricted global MINLP optimality.
+
 
 
 

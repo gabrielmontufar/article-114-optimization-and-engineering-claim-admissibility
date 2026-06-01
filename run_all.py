@@ -63,6 +63,14 @@ def run_script(script: str, continue_on_error: bool) -> tuple[str, int, float]:
     return script, proc.returncode, elapsed
 
 
+def refresh_log_dependent_reports(scripts: list[str], continue_on_error: bool) -> None:
+    """Regenerate reports that read run_all_log.txt after the log is current."""
+    if "cgc_benchmark_reporting_summary.py" in scripts:
+        run_script("cgc_benchmark_reporting_summary.py", continue_on_error)
+    if "cgc_software_package_integrity.py" in scripts:
+        run_script("cgc_software_package_integrity.py", continue_on_error)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Regenerate the CGC supplementary benchmark outputs.")
     parser.add_argument("--quick", action="store_true", help="Run only reporting scripts that summarize existing outputs.")
@@ -99,6 +107,7 @@ def main() -> None:
         + "\n",
         encoding="utf-8",
     )
+    refresh_log_dependent_reports(scripts, args.continue_on_error)
     print(out)
 
 
